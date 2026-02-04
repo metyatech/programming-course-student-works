@@ -1,2 +1,12 @@
 dist/
-
+node_modules/
+.DS_Store
+Thumbs.db
+Desktop.ini
+.env.local
+.env.*.local
+.vercel
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
