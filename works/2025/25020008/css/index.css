@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-image: url(../img/gara.avif);
+    background-size: cover;
+    background-position: center center;
+    font-family: "Kaisei Decol", serif;
+    letter-spacing: 0.1em;
+}
+/* ーーーーーーーーーヘッダーーーーーーーーー */
+header {
+    position: relative;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    background-image: url(../img/hart.avif);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    margin: 0px 0px 100px;
+}
+.font-contena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+    height: 100vh;
+    font-size: 3em;
+}
+/* ーーーーーーーヘッダーメニューーーーーーーー */
+.menu-top {
+    background-color: #602d1d;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+}
+
+.menu-book {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+.menu-item {
+    padding: 10px 10px;
+    border-radius: 30px;
+    margin: 0px 10px;
+}
+.menu-item:hover {
+    background-color: #fff0f5;
+    color: #602d1d;
+    cursor: pointer;
+}
+a {
+    color: #fff0f5;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+a:hover {
+    color: #602d1d;
+}
+
+/* ーーーーーハンバーガーメニュー(予定）ーーーーー */
+/* .menu-botan {
+    display: block;
+    padding: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+#baga-icon {
+    display: flex;
+    border: 1px solid #602d1d;
+} */
+
+
+
+/* ーーーーーーーーーーーーーメインーーーーーーーーーーー */
+main {
+    padding: 30px 0px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #602d1d;
+}
+/* ーーーーーーーボタンーーーーーーー */
+.botan {
+    background-color: #602d1d;
+    color: #fff0f5;
+    padding: 20px;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+.botan:hover {
+    background-color: #fff0f5;
+    color:  #602d1d;
+    transform: translateY(10px);
+    /* transition: all 0.4s; */
+}
+/* ーーーーー文章ーーーーーーーーー */
+#site-content {
+    background-color: rgba(40, 14, 6, 0.685);
+    color: #fff0f5;
+    width: 60%;
+    margin: 0px auto 80px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#site-content p {
+    margin: 10px;
+}
+/* --------------photogalleryの画像---------------- */
+.photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px dotted palevioletred;
+    cursor:  pointer; 
+    transition: transform 0.4s ease-in-out;
+}
+.photo:hover {
+    transform: scale(1.1);
+
+}
+/* ーーーーーーーーー横に流れるphotogalleryーーーーーーーーーーー */
+.scroll {
+    overflow-x: hidden;
+    
+}
+.jouhou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+    list-style: none;
+    margin: 20px;
+    animation: ugoke1 20s linear  infinite;
+    
+}
+@keyframes ugoke1 {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(100%);}
+}
+
+/* ーーーーーーーー時間経過で切り替わるー写真ーーーーーーーーー */
+.image {
+    padding: 0px  100px;
+    margin: 50px auto 50px;
+    height: 130vh;
+}
+.image h3 {
+    margin: 40px;
+    font-size: 24px;
+}
+#contena {
+    position: relative;
+    margin: 0px auto;
+    width: 900px;
+}
+.art {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 900px;
+    height: 130vh;
+    object-fit: cover;
+    border: 3px solid palevioletred;
+    border-radius: 15px;
+}
+.and2 {
+    animation: ugoke2 4s ease-in-out 0s alternate infinite ;
+    object-position: 0% 30%;
+}
+@keyframes ugoke2 {
+0% {opacity: 0;}
+100% {opacity: 1;} 
+} 
+
+/* ーーーーーーーーー動くプリンのおばけーーーーーーーーーーーー */
+.anime {
+    position: relative;
+}
+.obake {
+    top: 20px;
+    right: 0px;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    position: absolute;
+    animation: ugoke4 7s ease-in-out 0s alternate infinite;
+}
+@keyframes ugoke4 {
+0% {transform: rotate(0deg) ;}
+25% {transform: rotate(-20deg);}
+50% {transform: rotate(20deg); }
+75% {transform: rotate(-20deg); }
+100% {transform: rotate(0deg);} 
+} 
+
+
+/* ------------フッターーーーーーーーーーーー */
+footer {
+    background-color: #602d1d;
+    color: white;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 5.5;
+}

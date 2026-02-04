@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25020010_加瀬日菜乃</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header class="head">
+        <h1 class="logo">
+            <img src="images/identityv-title 1.png" alt="第五人格ロゴ">
+        </h1>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#home">ホーム</a></li>
+                <li class="rule">
+                    <a href="#rule">ルール解説</a>
+                    <ul class="rule">
+                        <li><a href="#survivor-role">サバイバーの役割と勝利条件</a></li>
+                        <li><a href="#hunter-role">ハンターの役割と勝利条件</a></li>
+                        <li><a href="#game-flow">ゲームの基本的な流れ</a></li>
+                    </ul>
+                </li>
+                <li class="character">
+                    <a href="#character">推しキャラクター紹介</a>
+                    <ul class="character">
+                        <li><a href="#survivors">サバイバー</a></li>
+                        <li><a href="#hunters">ハンター</a></li>
+                    </ul>
+                </li>
+                <li class="map">
+                    <a href="#map">マップ一覧</a>
+                </li>
+                <li class="pv">
+                    <a href="#pv">プレイ動画</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="drawer-nav" id="js-drawer">
+            <ul class="drawer-list">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#rule">ルール解説</a></li>
+                <li><a href="#character">推しキャラクター紹介</a></li>
+                <li><a href="#map">マップ一覧</a></li>
+                <li><a href="#pv">プレイ動画</a></li>
+            </ul>
+        </nav>
+        <div class="drawer-overlay" id="js-overlay"></div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-image-container">
+                <img src="images/imaga-home.webp" alt="第五人格のメインビジュアル">
+                <div class="hero-overlay"></div>
+            </div>
+        </section>
+
+        <section class="rule-section" id="rule">
+            <h2 class="section-title reveal">ルール解説</h2>
+            <p class="section-description reveal">
+                Identity V（第五人格）は、非対称対戦型のマルチプレイゲームです。<br>
+                プレイヤーは、サバイバー（逃げる側 4人）とハンター（追う側 1人）に分かれて、それぞれの勝利条件の達成を目指します。
+            </p>
+
+            <div class="rule-box reveal" id="survivor-role">
+                <div class="rule-text">
+                    <h3>1. サバイバーの役割と勝利条件</h3>
+                    <p>サバイバー（4人）の主な目的は、ハンターから逃げながらマップ内に設置された暗号機を修理することです。</p>
+                    <ul>
+                        <li class="rule-item">
+                            <span class="label">暗号機：</span>
+                            <span class="text">5台の暗号機を修理し、マップに現れる脱出ゲートの電源を開放します。</span>
+                        </li>
+                        <li class="rule-item">
+                            <span class="label">脱出：</span>
+                            <span class="text">2つの脱出ゲートのうち、いずれかを開放し、3人以上がゲートから脱出すると勝利です。</span>
+                        </li>
+                        <li class="rule-item">
+                            <span class="label">救助：</span>
+                            <span class="text">仲間がハンターに捕まってしまった場合、協力して救助することも重要な役割となります。</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rule-photo">
+                    <img src="images/survivor-play.PNG" alt="サバイバーのプレイ画像">
+                </div>
+            </div>
+
+            <div class="rule-box reveal" id="hunter-role">
+                <div class="rule-text">
+                    <h3>2. ハンターの役割と勝利条件</h3>
+                    <p>ハンター（1人）の主な目的は、サバイバーが脱出するのを阻止することです。</p>
+                    <ul>
+                        <li class="rule-item">
+                            <span class="label">阻止：</span>
+                            <span class="text">暗号機の修理を阻止し、サバイバーをロケットチェアで4人全員を排除するか、2人以下しか脱出できなければ勝利となります。</span>
+                        </li>
+                        <li class="rule-item">
+                            <span class="label">能力：</span>
+                            <span class="text">ハンターはそれぞれ固有の強力なスキルを持ち、マップを巡回してサバイバーを追い詰めると勝利です。</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rule-photo">
+                    <img src="images/hunter-play.PNG" alt="ハンターのプレイ画像">
+                </div>
+            </div>
+
+            <div class="rule-box reveal" id="game-flow">
+                <div class="rule-text">
+                    <h3>3. ゲームの基本的な流れ</h3>
+                    <p>サバイバーとハンターがマップに配置された状態からスタートします。</p>
+                    <ol>
+                        <li>暗号機が5台修理されると、脱出ゲートが開放可能になります。</li>
+                        <li>サバイバーは脱出ゲートを開放し、マップから脱出を目指します。</li>
+                        <li>ハンターはサバイバーが脱出する前に全員を捕獲することを目指します。</li>
+                    </ol>
+                </div>
+                <div class="rule-photo">
+                    <img src="images/assembly.jpg" alt="集合の画像">
+                </div>
+            </div>
+        </section>
+
+        <section id="character" class="character-section">
+            <h2 class="section-title reveal">推しキャラクター紹介</h2>
+
+            <h3 class="sub-title reveal" id="survivors">サバイバー</h3>
+            <div class="character-container">
+
+                <!--墓守は他のキャラクターと設定が違う-->
+                <div class="char-card reveal" data-name="アンドルー・クレス"
+                    data-desc="アルビノであることから周囲に疎まれ、孤独の中で生きてきた青年。
+スコップで地面を掘り進む『土潜り』状態になれば、移動速度が上昇し、ハンターの攻撃を一度だけ防ぐことができます。
+仲間を安全に助け出す救援のスペシャリストです。">
+                    <div class="char-img grave-keeper-adjust">
+                        <img src="images/Grave keeper.webp" alt="墓守">
+                    </div>
+                    <div class="char-info">
+                        <h4 class="job-title">墓守</h4>
+                    </div>
+                </div>
+
+                <div class="char-card reveal" data-name="ルカ・バルサー"
+                    data-desc="かつては将来を嘱望された天才発明家だったが、ある事故をきっかけに記憶の一部と地位を失った青年。
+マップ内の暗号機同士を『回路』で接続し、離れた場所から解読進捗を共有・転送することができます。
+解読効率を大幅に高める、解読型のスペシャリストです。">
+                    <div class="char-img">
+                        <img src="images/prisoner.jpg" alt="囚人">
+                    </div>
+                    <div class="char-info">
+                        <h4 class="job-title">囚人</h4>
+                    </div>
+                </div>
+
+                <div class="char-card reveal" data-name="エドガー・ワルデン"
+                    data-desc="傲慢で芸術至上主義な貴族の跡取り息子。
+ハンターの顔をキャンバスに描き、完成した『絵画』を設置することで、それを見たハンターを一定時間見惚れさせ、行動を制限できます。
+独自の芸術でハンターを翻弄するトリッキーな牽制役です。">
+                    <div class="char-img">
+                        <img src="images/painter.webp" alt="画家">
+                    </div>
+                    <div class="char-info">
+                        <h4 class="job-title">画家</h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3 class="sub-title reveal" id="hunters">ハンター</h3>
+            <div class="character-container">
+
+                <div class="char-card reveal" data-name="ロビー・ホワイト"
+                    data-desc="自分の『家』と『安息』を求めて彷徨う少年のハンター。
+マップに『安息松』を植え、その周囲を漂う『怨霊』を操って攻撃します。
+怨霊を引き寄せての加速や、遠距離からの怨霊攻撃を得意とし、逃げるサバイバーを確実に追い詰めます。">
+                    <div class="char-img">
+                        <img src="images/crybaby.webp" alt="泣き虫">
+                    </div>
+                    <div class="char-info">
+                        <h4 class="job-title">泣き虫</h4>
+                    </div>
+                </div>
+
+                <div class="char-card reveal" data-name="ジョゼフ・デソルニエーズ"
+                    data-desc="かつては名門貴族の若君だったが、失った兄弟を懐かしむあまり、写真の中に魂を留める方法を見出した老人。
+カメラで撮影した瞬間の世界を『写真世界』として固定し、そこでのダメージを現実に反映させる独特な能力を持ちます。
+時間の流れを操り、サバイバーを静かに追い詰めるハンターです。">
+                    <div class="char-img">
+                        <img src="images/photographer.webp" alt="写真家">
+                    </div>
+                    <div class="char-info">
+                        <h4 class="job-title">写真家</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="char-modal" class="modal">
+            <span class="modal-close" id="modal-close">&times;</span>
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="">
+                <div class="modal-text">
+                    <h2 id="modal-name"></h2>
+                    <p id="modal-desc"></p>
+                </div>
+            </div>
+        </div>
+        <section id="map" class="map-section">
+            <h2 class="section-title reveal">マップ一覧</h2>
+
+            <div class="slider-container reveal">
+                <button class="slider-arrow prev" id="js-prev"><span>&#10094;</span></button>
+
+                <div class="slider-wrapper">
+                    <div class="slider-inner" id="js-slider">
+                        <div class="map-card" data-name="軍需工場"
+                            data-desc="レオ・ベイカーが所有していた、悲劇の始まりの場所。
+古びた工場の残骸や散乱する資材が、かつての爆発事故を物語っています。
+視界を遮る障害物が多く、初心者から上級者まで、心理戦が重要となる定番のマップです。">
+                            <img src="images/map1.jpg" alt="軍需工場">
+                            <div class="map-label">軍需工場</div>
+                        </div>
+
+                        <div class="map-card" data-name="赤の教会"
+                            data-desc="ある花嫁の失踪事件以降、呪われたと噂される教会。
+壊れかけた壁や立ち並ぶ墓標が、静まり返った空気の中に不気味な気配を漂わせています。
+崩せる壁のギミックがあり、それをどう利用するかが脱出への鍵となります。">
+                            <img src="images/map2.webp" alt="赤の教会">
+                            <div class="map-label">赤の教会</div>
+                        </div>
+
+                        <div class="map-card" data-name="聖心病院"
+                            data-desc="深い沼地に囲まれた、古く不気味な精神病院。
+2階建ての複雑な構造を持つ中央の建物が特徴的で、窓枠や床の穴を利用した上下階の駆け引きが楽しめます。
+霧に包まれたような独特の雰囲気が恐怖を煽ります。">
+                            <img src="images/map3.jpg" alt="聖心病院">
+                            <div class="map-label">聖心病院</div>
+                        </div>
+
+                        <div class="map-card" data-name="湖景村"
+                            data-desc="かつては活気に溢れていた漁村ですが、今は不気味な海風だけが吹くゴーストタウンと化しています。
+巨大な難破船や高く伸びたトウモロコシ畑は、身を隠すのに絶好の場所。
+マップが非常に広いため、仲間との位置把握が重要です。">
+                            <img src="images/map4.webp" alt="湖景村">
+                            <div class="map-label">湖景村</div>
+                        </div>
+
+                        <div class="map-card" data-name="月の河公園"
+                            data-desc="楽しい歓声が響いていた遊園地は、一夜にして血塗られた惨劇の場となりました。
+現在も稼働するジェットコースターやメリーゴーランド、滑り台が、不気味にライトアップされています。
+アトラクションを駆使した独特のチェイスが魅力です。">
+                            <img src="images/map5.webp" alt="月の河公園">
+                            <div class="map-label">月の河公園</div>
+                        </div>
+
+                        <div class="map-card" data-name="レオの思い出"
+                            data-desc="静まり返った雪の夜、かつての軍需工場に雪が降り積もった姿。
+降りしきる雪の影響で視界が悪く、遠くからのハンターの接近に気づきにくい危険な場所です。
+工場2階の構造が拡張されており、より戦略的な移動が求められます。">
+                            <img src="images/map6.webp" alt="レオの思い出">
+                            <div class="map-label">レオの思い出</div>
+                        </div>
+
+                        <div class="map-card" data-name="永眠町"
+                            data-desc="日本の町並みを不気味に再現した、異様な雰囲気の街。
+時折通り抜ける路面電車は、サバイバーだけでなくハンターにも容赦なく接触します。
+商店街や広大な墓地、2階建ての民家など、探索しがいのある要素が満載です。">
+                            <img src="images/map7.webp" alt="永眠町">
+                            <div class="map-label">永眠町</div>
+                        </div>
+
+                        <div class="map-card" data-name="中華街"
+                            data-desc="華やかな装飾が虚しく残る、夜の中華街。
+狭い路地裏や、内部を通り抜けられる大きな建物が複雑に入り組んでいます。
+高低差のあるチェイスポイントが多く、建物の窓や階段を使いこなす技術が試されるマップです。">
+                            <img src="images/map8.webp" alt="中華街">
+                            <div class="map-label">中華街</div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="slider-arrow next" id="js-next"><span>&#10095;</span></button>
+            </div>
+        </section>
+
+        <section id="pv" class="pv-section reveal">
+            <div class="container">
+                <h2 class="section-title">プレイ動画</h2>
+                <div class="video-container">
+                    <video controls preload="none" poster="images/thumb.png" class="my-video">
+                        <source src="images/pv.MP4" type="video/mp4">
+                        お使いのブラウザは動画再生に対応していません。
+                    </video>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-copy">&copy;25020010_加瀬日菜乃</p>
+            <div class="footer-links">
+                <a href="https://www.identityvgame.com/jp/" target="_blank">Identity V 公式サイト</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

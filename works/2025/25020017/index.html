@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ウサギ専門店</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <!-- 最近新しくお迎えしたウサギが懐いてきたのが可愛すぎてテンションが上がりまるっと変えてしまいました。もともと作るつもりだったものは影も形もございません -->
+    <!-- ヘッダー -->
+    <header>
+        <h1>ようこそ！ウサギ専門店へ</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">店について</a></li>
+                <li class="dropdown">
+                    <a href="#rabbits" class="dropbtn">ウサギの種類</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#neitherland">ネザーランドドワーフ</a></li>
+                        <li><a href="#dwarfhot">ドワーフホト</a></li>
+                        <li><a href="#holandropp">ホーランドロップ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <section id="about">
+            <h2>店について</h2>
+            <p>
+                当店「ウサギ専門店」は、かわいくて健康なウサギをお届けすることを使命としています。<br>
+                長年にわたり、多くのお客様に満足いただけるよう、厳選した品種と丁寧な飼育環境を心がけています。
+            </p>
+            <p>
+                代表的な品種には、ネザーランドドワーフやホーランドロップ、ドワーフホトなどがあります。<br>
+                これらはそれぞれ個性的な魅力を持っており、初心者から経験者まで幅広くお楽しみいただけます。
+            </p>
+            <p>
+                また、私たちのスタッフはウサギの専門知識に長けており、飼育や健康管理についてのアドバイスも喜んでお手伝いいたします。<br>
+                ウサギと共に楽しい生活を始めたい方々に最適なサポートを提供しています。
+            </p>
+            <p>
+                店内は清潔で快適な空間となっており、ご来店時には実際にウサギと触れ合い、ご要望に合わせたご案内も可能です。<br>
+                ぜひお気軽にお越しください。
+            </p>
+        </section>
+
+        <section id="rabbits">
+            <h2>ウサギの種類</h2>
+            <div class="rabbit-cards">
+                <!-- ネザーランドドワーフ -->
+                <div class="rabbit card" id="neitherland">
+                    <img src="image/IMG_7490.jpg" alt="ネザーランドドワーフ" />
+                    <h3>ネザーランドドワーフ</h3>
+                    <p>丸いフォルムとつぶらな瞳が魅力的な、世界最小のウサギです。<br>当店では、健康で良質なネザーランドドワーフを厳選し、愛情を込めてお世話しています。<br>小さくても個性豊かなパートナーとの生活を、ぜひ当店で見つけてください。
+                    </p>
+                </div>
+                <!-- ドワーフホト -->
+                <div class="rabbit card" id="dwarfhot">
+                    <img src="image/GettyImages-498665681-1-740x524-1-e1594784950560.jpg" alt="ドワーフホト" />
+                    <h3>ドワーフホト</h3>
+                    <p>目の周りのチャームポイント、黒いアイラインが印象的なウサギです。<br>穏やかな性格で人懐っこく、初心者にもおすすめです。<br>当店では、元気いっぱいのドワーフホトたちが、あなたとの出会いを待っています。
+                    </p>
+                </div>
+                <!-- ホーランドロップ -->
+                <div class="rabbit card" id="holandropp">
+                    <img src="image/IMG_2021-2.jpg" alt="ホーランドロップ" />
+                    <h3>ホーランドロップ</h3>
+                    <p>たれ耳と丸いフォルムが愛らしい、人気のロップイヤー種です。<br>比較的おっとりとした性格で、飼いやすいのが魅力。<br>当店では、様々な毛色のホーランドロップが、あなたを癒やします。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form id="contactForm">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required />
+                <label for="message">メッセージ</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">送信</button>
+            </form>
+            <p id="formResult"></p>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; ウサギ専門店</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

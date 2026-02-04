@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(229, 240, 255);
+    margin-bottom: 50px;
+}
+.hed{
+    margin: 0;
+    
+    background: url(./image/画像.jpg);
+    width: 1000px;
+    height: 40vh;
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ハンバーガーのボタンとアイコンの調整 */
+.ham-btn {
+  display: block; /* block にしないと変な意図しない余白が勝手に入るので */
+  padding: 20px;
+
+  border: none; /* 枠線を消す */
+  background: transparent; /* 背景を消す */
+  cursor: pointer; /* カーソルは手のマーク */
+  position: relative; /* z-index を効かせるためだけに position を relative に */
+  z-index: 9999;
+}
+
+.ham-icon {
+  display: flex; /* gap を使いたいだけ */
+  flex-direction: column; /* 縦並び */
+  gap: 8px; /* 間隔 8px */
+  z-index: 3;
+}
+
+.ham-icon .line {
+  width: 32px;
+  height: 4px;
+
+  display: block; /* span はデフォルトで display: inline なので、width, height を効かせるために block にする */
+  background-color:rgb(2, 57, 104);
+  transform-origin: left center; /* 左中央を基準点にする */
+  transition: all 1s; /* プロパティの変化を滑らかに */
+}
+
+.ham-icon.open .line.top { /* ハンバーガーアイコンに open クラスがついているとき（開いているとき）　の　一番上の線 */
+  transform: rotate(45deg); /* 45度回転 */
+}
+.ham-icon.open .line.middle { /* ハンバーガーアイコンに open クラスがついているとき（開いているとき）　の　真ん中の線 */
+  opacity: 0; /* 透明にする */
+}
+.ham-icon.open .line.bottom { /* ハンバーガーアイコンに open クラスがついているとき（開いているとき）　の　一番下の線 */
+  transform: rotate(-45deg); /* -45度回転 */
+}
+
+
+.drawer {
+  position: fixed; /* 画面内で、位置固定 */
+  top: 0; /* 要素の上端は画面の上端に合わせる */
+  bottom: 0; /* 要素の下端は画面の下端に合わせる(top:0, bottom:0 によって高さが画面いっぱいになる) */
+  left: 0; /* 画面の左端に配置 */
+  background-color: white; /* 背景をつけないと透明になるから */
+
+  padding-top: 60px; /* 上に60pxの余白 */
+  transform: translateX(-100%); /* 初期の閉じている状態では、画面左に隠す */
+  transition: all 1s; /* 滑らかに変化するようにする */
+  z-index: 3;
+}
+
+.drawer.open { /* メニューコンテンツに open クラスがついているとき（開いているとき） */
+  transform: translateX(0); /* 元の位置に表示する */
+}
+
+.drawer ul {
+  list-style: none; /* リストマーカーを消す */
+  padding: 0; /* デフォルトのパディングを消す */
+  margin: 0; /* デフォルトのマージンを消す */
+}
+
+.drawer a {
+  display: block; /* 余計な余白を生まないために、ブロック要素にする */
+  padding: 12px 36px; /* リンクの内側の余白 */
+  color: rgb(2, 57, 104); /* リンクの色を黒に */
+  text-decoration: none; /* 下線を消す */
+  transition: background-color 0.3s; /* 背景色の変化を滑らかにする */
+}
+.drawer a:hover {
+  background-color: #ddfffe; /* ホバー時の背景色をライトグレーに */
+}
+
+
+.overlay {
+  position: fixed; /* 画面内で位置固定 */
+  top: 0; /* 上端を画面の上端に合わせる */
+  bottom: 0; /* 下端を画面の下端に合わせる */
+  left: 0; /* 左端を画面の左端に合わせる */
+  right: 0; /* 右端を画面の右端に合わせる */
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
+  opacity: 0; /* 初期状態では透明にする */
+  transition: opacity 1s; /* opacity の変化を滑らかにする */
+  z-index: 1; /* メニューの下に表示するために、z-index を 0 に */
+  pointer-events: none;
+}
+
+.overlay.open { /* オーバーレイに open クラスがついているとき（開いているとき） */
+  opacity: 1; /* 見えるようにする */
+}
+
+h4{
+    color: rgb(2, 57, 104);
+    
+    margin: 0 auto;
+}
+
+h1{
+    color: rgb(2, 57, 104);
+}
+
+.syoukai{
+    width: 1000px;
+    background-color: #fff;
+    color: rgb(2, 57, 104);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kawai{
+    margin: 50px
+}
+
+.prof{
+    width: 1000px;
+    background-color: #fff;
+    color: rgb(2, 57, 104);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    margin-top: 50px;
+}
+
+.photo{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    margin-top: 40px;
+    right: 40px;
+}
+
+.txt1{
+    display: flex;
+    align-items: center;
+}
+
+.onamae{  
+    position: relative;
+    left: 70px;
+}
+
+.p{
+    margin: 30px;
+}
+
+.movi{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.you{
+    width: 1000px;
+    background-color: #fff;
+    color: rgb(2, 57, 104);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.dou{
+    width: 1000px;
+}
+
+.dou iframe{
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.megu{
+    position: relative;
+    left: 620px;
+    font-size: 13px;
+    
+}
+.kimi{
+    position: relative;
+    left: 620px;
+    font-size: 13px;
+    
+}
+.sayo{
+    position: relative;
+    left: 620px;
+    font-size: 13px;
+}
+
+.dou1{
+    width: 1000px;
+}
+
+.dou1 iframe{
+    margin: 30px auto;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.dou2{
+    width: 1000px;
+}
+
+.dou2 iframe{
+    margin: 30px auto;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: rgb(2, 57, 104);
+}
+
+a:hover{
+    cursor: pointer;
+    color: #4809bc;
+    
+}

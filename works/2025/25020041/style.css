@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+header {
+    position: r1elative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background-color: #ffca24;
+
+    img {
+        width: 160px;
+        object-fit: cover;
+        height: fit-content;
+    }
+}
+
+main {
+    width: 100%;
+    height: 300vh; 
+    position: relative;
+    background-color: #ffca24;
+
+    nav {
+        position: relative;
+        z-index: 99;
+        position: sticky;
+        width: 100%;
+        top: 20px;
+        right: 20px;
+        /* background-color: red; */
+
+        a {
+            position: absolute;
+            right: 20px;
+            top: 0;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                scale: 1.2;
+                transition: all 0.3s ease-in-out;
+            }
+            img {
+                width: 90px;
+                height: fit-content;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        object-fit: cover;
+    }
+    section.three {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        padding: 48px;
+        background-image: url(images/ブロ背景.webp);
+
+        img.otis {
+            position: absolute;
+            top: -60px;
+            left: 10px;
+        }
+
+        .seiretu1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+
+            img.TvTmoji {
+                width: 40%;
+            }
+
+            img.TvTscreen {
+                width: 60%;
+        .chara_all {
+                
+
+ @media (max-width: 768px) {
+    .section-title {
+        font-size: 36px;
+    }
+
+    .download-btn {
+        font-size: 24px;
+        padding: 15px 35px;
+    }
+
+    .download-buttons {
+        gap: 20px;
+    }
+}
+
+/* レスポンシブ対応 - スマートフォン */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .download-btn {
+        font-size: 20px;
+        padding: 12px 28px;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .download-section {
+        padding: 60px 20px;
+    }
+}
+
+.download-btn.app-store {
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    border-color: #fff;
+}
+
+.download-btn.app-store:hover {
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+}
+
+
+.download-btn.google-play {
+    background: linear-gradient(135deg, #01875F 0%, #00573E 100%);
+    border-color: #FFD700;
+}
+
+.download-btn.google-play:hover {
+    background: linear-gradient(135deg, #00A871 0%, #01875F 100%);
+}
+
+
+.download-btn.glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 
+            0 10px 0 #6B0F14,
+            0 15px 40px rgba(0,0,0,0.6),
+            0 0 20px rgba(230, 57, 70, 0.5);
+    }
+    50% {
+        box-shadow: 
+            0 10px 0 #6B0F14,
+            0 15px 40px rgba(0,0,0,0.6),
+            0 0 40px rgba(230, 57, 70, 0.8),
+            0 0 60px rgba(230, 57, 70, 0.4);
+    }
+}
+
+
+.download-subtitle {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.download-btn i,
+.download-btn .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.download-btn:focus {
+    outline: 3px solid #FFD700;
+    outline-offset: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .download-section {
+        background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+        }
+
+            
+            }
+        }
+    }
+            }
+        }
+    }

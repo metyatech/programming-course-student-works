@@ -1,0 +1,325 @@
+/* 全体の設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Yu Gothic', 'Hiragino Sans', sans-serif;
+  line-height: 1.6;
+  color: rgb(51, 51, 51);
+}
+
+/* ヘッダーのスタイル */
+header {
+  background-color: rgb(91, 123, 201);
+  padding: 22px 38px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.logo p {
+  font-size: 14px;
+  color: white;
+}
+
+/* ナビゲーションメニュー */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 28px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.25s;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 215, 10);
+}
+
+/* メインビジュアルセクション */
+.hero {
+  background-color: rgb(245, 245, 245);
+  padding: 58px 42px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  width: 45%;
+  padding-right: 36px;
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  color: rgb(48, 48, 48);
+  margin-bottom: 18px;
+  line-height: 1.45;
+  letter-spacing: 1px;
+}
+
+.hero-text p {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: white;
+  color: rgb(91, 123, 201);
+  text-decoration: none;
+  border: 1.5px solid rgb(204, 204, 204);
+  transition: background-color 0.3s, color 0.25s;
+}
+
+.btn:hover {
+  background-color: rgb(45, 75, 151);
+  color: white;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* コンセプトセクション */
+.concept {
+  padding: 76px 40px;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 38px;
+}
+
+.section-title p {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+  margin-bottom: 12px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  color: rgb(51, 51, 51);
+  
+}
+
+.concept-content {
+  margin-bottom: 48px;
+}
+
+.concept-content p {
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 11px;
+  line-height: 1.7;
+}
+
+.concept-image {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.concept-image img {
+  height:350px;
+  width: 600px;
+  object-fit: cover;
+}
+
+/* ゲストルームセクション */
+.guest-room {
+  display: flex;
+  padding: 62px 38px;
+  background-color: rgb(250, 250, 250);
+  align-items: center;
+}
+
+.room-image {
+  width: 50%;
+  padding-right: 44px;
+}
+
+.room-image img {
+  width: 100%;
+  height: auto;
+}
+
+.room-text {
+  width: 50%;
+  padding-left: 38px;
+}
+
+.label {
+  font-size: 12px;
+  color: rgb(38, 63, 128);
+  margin-bottom: 10px;
+}
+
+.room-text h2 {
+  font-size: 28px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 18px;
+}
+
+.room-text p {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 14px;
+  line-height: 1.65;
+}
+
+.detail-link {
+  color: rgb(91, 123, 201);
+  text-decoration: none;
+  font-size: 14px;
+  border-bottom: 1px solid rgb(91, 123, 201);
+  transition: color 0.35s;
+}
+
+.detail-link:hover {
+  color: rgb(209, 237, 49);
+}
+
+/* レストランセクション */
+.restaurant {
+  display: flex;
+  padding: 58px 42px;
+  align-items: center;
+}
+
+.restaurant-text {
+  width: 50%;
+  padding-right: 42px;
+}
+
+.restaurant-text h2 {
+  font-size: 28px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 20px;
+}
+
+.restaurant-text p {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 16px;
+  line-height: 1.68;
+}
+
+.restaurant-image {
+  width: 50%;
+  padding-left: 38px;
+}
+
+.restaurant-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* スパセクション */
+.spa {
+  display: flex;
+  padding: 60px 40px;
+  background-color: rgb(250, 250, 250);
+  align-items: center;
+}
+
+.spa-image {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.spa-image img {
+  width: 100%;
+  height: auto;
+}
+
+.spa-text {
+  width: 50%;
+  padding-left: 42px;
+}
+
+.spa-text h2 {
+  font-size: 28px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 22px;
+}
+
+.spa-text p {
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* フッター */
+footer {
+  background-color: rgb(91, 123, 201);
+  padding: 38px 40px;
+  text-align: center;
+  color: white;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.footer-nav ul li {
+  margin: 0 16px;
+}
+
+.footer-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ソーシャルアイコン */
+.social-icons {
+  margin-bottom: 22px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: white;
+}

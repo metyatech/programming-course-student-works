@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>化粧品サイト</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./index.js" defer></script>
+
+
+</head>
+
+<body>
+    <div class="mein-header">
+        <header>
+            <button class="ham-btn">
+                <span class="ham-icon">
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line buttom"></span>
+                </span>
+            </button>
+            <div class="mein-visual">
+                <div class="mein-1">
+                    <h1>素肌が語りだす、<br>美しさの物語。</h1>
+                    <a href="#lineup" class="btn">Lineup</a>
+                </div>
+                <img class="mein-gazou" src="./imeges/mein_gazou.png" alt="">
+            </div>
+        </header>
+        <nav class="drawer">
+            <ul>
+                <li><a href="#">Top</a></li>
+                <li><a href="#">Lineup</a></li>
+                <li><a href="#">Topic</a></li>
+            </ul>
+        </nav>
+        <div class="overlay"></div>
+    </div>
+    <section class="about">
+        <p>私たちは“肌が喜ぶケア”を追求し、こだわり抜いた
+            <br>成分と処方で、
+            <br>あなたの素肌に寄り添います。
+        </p>
+    </section>
+    <section class="lineup-section">
+        <h2>Lineup</h2>
+        <div class="lineup">
+            <div class="item">
+                <img src="./imeges/Group 1.png" alt="美容液の画像">
+                <a href="#" class="detail">詳細はこちら</a>
+            </div>
+            <div class="item right">
+                <img src="./imeges/Group 2.png" alt="美容液の画像">
+                <a href="#" class="detail txt1">詳細はこちら</a>
+            </div>
+            <div class="item">
+                <img src="./imeges/Group 3.png" alt="美容液の画像">
+                <a href="#" class="detail">詳細はこちら</a>
+            </div>
+
+            <!-- <img src="./imeges/happa1.png" alt="" class="leaf leaf-top"> -->
+        </div>
+
+        <img class="happa1"  src="./imeges/happa1.png" alt="">
+        <img class="happa2"  src="./imeges/happa2.png" alt="">
+        <img class="happa3"  src="./imeges/happa3.png" alt="">
+        <img class="happa4"  src="./imeges/happa4.png" alt="">
+    </section>
+
+    <section class="topic-section">
+        <h2 class="topic">topic</h2>
+        <div class="slider">
+            <div class="img"><img src="./imeges/Mask group.png" alt=""></div>
+            <div class="img"><img src="./imeges/Mask group2.png" alt=""></div>
+            <div class="img"><img src="./imeges/Mask group3.png" alt=""></div>
+            <div class="img"><img src="./imeges/Mask group4.png" alt=""></div>
+            <div class="img"><img src="./imeges/Mask group5.png" alt=""></div>
+            <div class="img"><img src="./imeges/Mask group6.png" alt=""></div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="#">問い合わせ</a></li>
+            <li><a href="#">お知らせ</a></li>
+            <li><a href="#">化粧品について</a></li>
+        </ul>
+        <p class="footer-sub">© 2024 化粧品サイト All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

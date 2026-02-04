@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SixTONES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="sound-modal">
+  <div class="sound-box">
+    <p class="sound-text">
+      このサイトでは音楽が流れます。<br>
+      <span class="en">Please be careful with sound.</span>
+    </p>
+
+    <div class="sound-buttons">
+      <button id="sound-play">▶ 音を流して見る</button>
+      <button id="sound-mute">音を出さずに見る</button>
+    </div>
+  </div>
+</div>
+
+  <!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- HEADER 内 -->
+<div class="header-player">
+  <button id="shuffle-header">🔀</button>
+  <button id="header-prev">⏮</button>
+  <button id="header-play">▶</button>
+  <button id="header-next">⏭</button>
+  <button id="repeat-header">🔁</button>
+</div>
+
+<nav class="header-menu" id="header-menu">
+      <button class="menu-close" id="menu-close">×</button>
+
+      <ul class="menu-list">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#member">MEMBER</a></li>
+        <li><a href="#discography">DISCOGRAPHY</a></li>
+        <li><a href="#video">VIDEO</a></li>
+        <li><a href="#music">MUSIC</a></li>
+      </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<header class="hero">
+  <h1>SixTONES</h1>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>ABOUT</h2>
+  <p>
+    6人それぞれが強い個性を持ちながらも、ひとつのグループとして圧倒的な存在感を放つグループです。<br>
+    力強くエッジのあるサウンドと、楽曲ごとに変化する表情は、<br>
+    聴くたびに新しい印象を与えてくれます。
+  </p>
+  <p>
+    このサイトでは、SixTONESの音楽やビジュアルが持つ<br>
+    「強さ」や「静けさ」といった要素を、<br>
+    シンプルな構成と余白を使って表現することを意識しました。<br>
+    情報を詰め込みすぎず、雰囲気や世界観を感じられるような<br>
+    ビジュアルサイトとしてまとめています。
+  </p>
+</section>
+
+<!-- NEWS -->
+<section id="news">
+  <h2>NEWS</h2>
+  <ul class="news-list">
+    <li>
+      <span class="date">2026.1.11</span>
+      <p>新曲「Rebellion」が日本テレビ系日曜ドラマ『パンチドランク・ウーマン −脱獄まであと××日−』オープニングテーマに決定！</p>
+    </li>
+    <li>
+      <span class="date">2025.11.6</span>
+      <p>SixTONES LIVE TOUR 2026「MILESixTONES」決定！</p>
+    </li>
+    <li>
+      <span class="date">2025.11.6</span>
+      <p>初のベストアルバム『MILESixTONES -Best Tracks-』2026年1月21日にリリース決定！</p>
+    </li>
+  </ul>
+</section>
+
+<!-- MEMBER -->
+<section id="member">
+  <h2>MEMBER</h2>
+
+  <!-- Jesse -->
+  <article class="member">
+    <div class="member-image">
+      <img src="images/IMG_0371.png" alt="Jesse">
+    </div>
+    <div class="member-text">
+      <div class="member-text-inner">
+        <h3>Jesse</h3>
+
+        <p class="profile">
+          1996年6月11日生まれ、東京都出身。<br>
+          SixTONESのメンバーとして活動する一方、俳優としても数多くの作品に出演。<br>
+          存在感のある佇まいと表現力で、映像作品でも強い印象を残している。
+        </p>
+
+        <p class="works">
+          主な出演作<br>
+          【映画】劇場版 TOKYO MER〜走る緊急救命室〜（2023年）<br>
+          リボルバー・リリー（2023年）／お嬢と番犬くん（2025年）<br>
+          【ドラマ】最初はパー（2022年／テレビ朝日）<br>
+          新空港占拠（2024年／NTV）<br>
+          モンスター（2025年／フジテレビ）<br>
+          パンチドランク・ウーマン −脱獄まであとxx日−（2026年／NTV）<br>
+          【舞台】スタンディングオベーション（2021年）<br>
+          ブロードウェイミュージカル ビートルジュース（2023年・2025年）
+        </p>
+
+        <p class="description"><br>
+          グループの中でもひときわ目を引く存在感を持つメンバー。<br>
+          パワフルな歌声と明るいキャラクターで、SixTONESの空気を一気に動かす力がある。<br>
+          ステージ上では堂々とした表情を見せながらも、どこか余裕を感じさせる立ち姿が印象的。<br><br>
+          その存在は、グループの「勢い」や「強さ」を象徴する一方で、<br>
+          自然体な魅力が全体のバランスを保っている。
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Taiga Kyomoto -->
+  <article class="member reverse">
+    <div class="member-image">
+      <img src="images/IMG_0370.png" alt="Taiga Kyomoto">
+    </div>
+    <div class="member-text">
+      <div class="member-text-inner">
+        <h3>Taiga Kyomoto</h3>
+
+        <p class="profile">
+          1994年12月3日生まれ、東京都出身。
+        </p>
+
+        <p class="profile">
+          高い歌唱力と繊細な表現力を持つボーカリスト。<br>
+          舞台や映像作品にも多数出演し、音楽と演技の両面で活躍の幅を広げている。
+        </p>
+
+        <p class="works">
+          主な出演作<br>
+          【映画】TANG タング（2022年）／言えない秘密（2024年）／見える子ちゃん（2025年）<br>
+          【ドラマ】束の間の一花（2022年／NTV）／お迎え渋谷くん（2024年／フジテレビ）<br>
+          【ミュージカル】ニュージーズ（2021年）／モーツァルト!（2024年）／Once（2025年）
+        </p>
+
+        <p class="description"><br>
+          繊細さと力強さを併せ持つボーカリスト。<br>
+          楽曲ごとに表情を変える歌声は、SixTONESの音楽に深みを与えている。<br><br>
+          静かなパートから感情を一気に解放する瞬間まで、<br>
+          一つひとつの音に物語を感じさせる表現力が特徴。<br>
+          グループの世界観を形づくる上で欠かせない存在。
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Hokuto Matsumura -->
+  <article class="member">
+    <div class="member-image">
+      <img src="images/IMG_0369.png" alt="Hokuto Matsumura">
+    </div>
+    <div class="member-text">
+      <div class="member-text-inner">
+        <h3>Hokuto Matsumura</h3>
+        <p class="profile">
+          1995年6月18日生まれ、静岡県出身。
+        </p>
+        <p class="profile">
+          落ち着いた雰囲気と確かな演技力が評価され、俳優としても注目を集めている。<br>
+          静かな存在感が作品全体に深みを与える。
+        </p>
+
+        <p class="works">
+          主な出演作<br>
+          【映画】ライアー×ライアー（2021年）／すずめの戸締り（2022年）<br>
+          キリエのうた（2023年）／夜明けのすべて（2024年）／ディア・ファミリー（2024年）<br>
+          ファーストキス 1ST KISS（2025年）／秒速5センチメートル（2025年）<br>
+          【ドラマ】パーフェクトワールド（2019年／フジテレビ）<br>
+          レッドアイズ 監視捜査班（2021年／NTV）<br>
+          連続テレビ小説『カムカムエヴリバディ』（2021年／NHK）<br>
+          ノッキンオン・ロックドドア（2023年／テレビ朝日）<br>
+          西園寺さんは家事をしない（2024年／TBS）<br>
+          アンサンブル（2025年／NTV）<br>
+          九条の大罪（2026年〜／Netflix）
+        </p>
+
+        <p class="description"><br>
+          落ち着いた佇まいと鋭い表現力が印象的なメンバー。<br>
+          静と動のコントラストを自然に体現し、<br>
+          グループ全体の空気を引き締める役割を担っている。<br><br>
+          SixTONESのバランスを支える重要な存在。
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Yugo Kochi -->
+  <article class="member reverse">
+    <div class="member-image">
+      <img src="images/IMG_0368.png" alt="Yugo Kochi">
+    </div>
+    <div class="member-text">
+      <div class="member-text-inner">
+        <h3>Yugo Kochi</h3>
+
+        <p class="profile">
+          3月8日生まれ、神奈川県出身。
+        </p>
+
+        <p class="profile">
+          親しみやすいキャラクターと安定感のある立ち位置で、グループを支える存在。<br>
+          バラエティ番組や舞台など、幅広い分野で活動している。
+        </p>
+
+        <p class="works">
+          主な出演作<br>
+          【舞台】夏の夜の夢（2022年）／星降る夜に出掛けよう（2023年）<br>
+          Come Blow Your Horn〜ボクの独立宣言〜（2024年）／ある日、ある時、ない男。（2025年）<br><br>
+          【テレビ】スクール革命！（2009年〜）／ムサシノ輪舞曲（2025年）
+        </p>
+
+        <p class="description">
+          柔らかい雰囲気と親しみやすさを持つメンバー。<br>
+          自然体でいることが、そのままグループの安心感につながっている。<br><br>
+          控えめでありながらも確かな存在感があり、<br>
+          SixTONESの空気を和らげる重要な役割を果たしている。
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Shintaro Morimoto -->
+  <article class="member">
+    <div class="member-image">
+      <img src="images/IMG_0367.png" alt="Shintaro Morimoto">
+    </div>
+    <div class="member-text">
+      <div class="member-text-inner">
+        <h3>Shintaro Morimoto</h3>
+
+        <p class="profile">
+          1997年7月15日生まれ、神奈川県出身。
+        </p>
+
+        <p class="profile">
+          エネルギッシュなパフォーマンスと高い表現力が特徴。<br>
+          俳優としても数多くの映像作品に出演し、存在感のある演技を見せている。
+        </p>
+
+        <p class="works">
+          主な出演作<br>
+          【映画】燃えよ剣（2021年）／Gメン（2023年）／正体（2024年）<br><br>
+          【ドラマ】監察医朝顔シリーズ（2019年〜2025年／フジテレビ）ナンバMG5（2022年／フジテレビ）<br>
+          だが、情熱はある。（2023年／NTV）街並み照らすヤツら（2024年／NTV）<br>
+          アイシー〜瞬間記憶捜査・柊班〜（2025年／フジテレビ）良いこと悪いこと（2025年／NTV）
+        </p>
+
+        <p class="description"><br>
+  感情表現の幅が広く、力強いパフォーマンスが印象的なメンバー。<br>
+  素直さと勢いを併せ持ち、グループの「熱量」を体現する存在。<br>
+  見る者の視線を自然と引き寄せる魅力がある。
+</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Juri Tanaka -->
+  <article class="member reverse">
+    <div class="member-image">
+      <img src="images/IMG_0372.png" alt="Juri Tanaka">
+    </div>
+    <div class="member-text">
+      <div class="member-text-inner">
+        <h3>Juri Tanaka</h3>
+
+        <p class="profile">
+          1995年6月15日生まれ、千葉県出身。
+        </p>
+
+        <p class="profile">
+          ラップとトークを担うSixTONESの要。<br>
+          音楽活動に加え、司会やバラエティ番組など多方面で活躍している。
+        </p>
+
+        <p class="works">
+          主な出演作<br>
+          【映画】ブラック校則（2019年）／劇場版 ACMA:GAME 最後の鍵（2024年）<br><br>
+          【ドラマ】うきわ -友達以上、不倫未満-（2021年／テレビ東京）<br>
+          単身花日（2023年／テレビ朝日）<br>
+          ACMA:GAME アクマゲーム（2024年／NTV）<br>
+          I,KILL（2025年／WOWOW）<br><br>
+          【舞台】DREAM BOYS（2021年・2022年）／ぼくらの七日間戦争（2025年）
+        </p>
+
+        <p class="description">
+          ラップとトークを担うSixTONESの軸となる存在。<br>
+          言葉選びの鋭さと冷静な視点で、グループ全体をまとめ上げている。<br><br>
+          パフォーマンスでは力強く、言葉には説得力があり、<br>
+          SixTONESの輪郭を明確にする役割を果たしている。
+        </p>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- DISCOGRAPHY -->
+<section id="discography">
+  <h2>DISCOGRAPHY</h2>
+
+  <div class="swiper discography-swiper single-swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/001/">
+        <img src="images/Imitation Rain.png" alt="Imitation Rain">
+        <p>Imitation Rain</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/002/">
+        <img src="images/NAVIGATOR.png" alt="NAVIGATOR">
+        <p>NAVIGATOR</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d004/">
+        <img src="images/NEW ERA.png" alt="NEW ERA">
+        <p>NEW ERA</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d006/">
+        <img src="images/僕が僕じゃないみたいだ.jpg" alt="僕が僕じゃないみたいだ">
+        <p>僕が僕じゃないみたいだ</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d007/">
+        <img src="images/マスカラ.jpg" alt="マスカラ">
+        <p>マスカラ</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d010/">
+        <img src="images/共鳴.jpg" alt="共鳴">
+        <p>共鳴</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d011/"
+        ><img src="images/わたし.jpg" alt="わたし">
+        <p>わたし</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d013/">
+        <img src="images/Good luck!_ふたり.jpg" alt="Good Luck!/ふたり">
+        <p>Good Luck!/ふたり</p>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d015/">
+        <img src="images/ABARERO.jpg" alt="ABARERO">
+        <p>ABARERO</p>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d016/">
+        <img src="images/こっから.jpg" alt="こっから">
+        <p>こっから</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d017/">
+        <img src="images/CREAK.jpg" alt="CREAK">
+        <p>CREAK</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d020/">
+          <img src="images/音色.jpg" alt="音色">
+          <p>音色</p>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d021/">
+        <img src="images/GONG_ここに帰ってきて.jpg" alt="GONG/ここに帰ってきて">
+        <p>GONG/ここに帰ってきて</p>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d024/">
+        <img src="images/バリア.jpg" alt="バリア">
+        <p>バリア</p>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d025/">
+        <img src="images/BOYZ.jpg" alt="BOYZ">
+        <p>BOYZ</p>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d026/">
+        <img src="images/Stargaze.jpg" alt="Stargaze">
+        <p>Stargaze</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- ALBUM -->
+<div class="discography-block">
+  <h3 class="discography-title">ALBUM</h3>
+
+  <div class="swiper album-swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d005/">
+        <img src="images/1st.png" alt="1ST">
+        <p>1ST</p>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d009/">
+        <img src="images/CITY.png" alt="CITY">
+        <p>CITY</p>
+      </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d014/">
+        <img src="images/声.png" alt="声">
+      </a>
+        <p>声</p>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d019/">
+        <img src="images/THE VIBES.jpg" alt="THE VIBES">
+        <p>THE VIBES</p>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d023/">
+        <img src="images/GOLD.jpg" alt="GOLD">
+      </a>
+        <p>GOLD</p>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="https://www.sixtones.jp/discography/d028/">
+        <img src="images/MILE SixTONES.jpg" alt="MILE SixTONES -Best Tracks-">
+        <p>MILE SixTONES -Best Tracks-</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+  <h2>VIDEO</h2>
+  <div class="video-grid">
+    <div class="video-item">
+     <a
+      href="https://youtu.be/re6Bj0PLZw8?si=MuaB1_ln-agbBYb1"
+      target="_blank"
+      rel="noopener"
+    >
+      <img src="images/こっから_vvs.jpg" alt="SixTONES こっから">
+      <p>SixTONES –「こっから」from LIVE DVD/BD「VVS」(2024.4.22 TOKYO DOME)</p>
+    </a>
+    </div>
+
+    <div class="video-item">
+      <a href="https://youtu.be/QQtAhXTlEeg?si=iZ4Jv8hAG3loKLgl"
+      target="_blank"
+      rel="noopener"
+      >
+      <img src="images/ABARERO_慣声の法則.JPG" alt="">
+      <p>SixTONES –「ABARERO」from LIVE DVD/BD「慣声の法則 in DOME」(2023.4.23 TOKYO DOME)</p>
+      </a>
+    </div>
+
+    <div class="video-item">
+      <a
+      href="https://youtu.be/gW8YzvIB7co?si=DrNrl7te4or1ljil"
+      target="_blank"
+      rel="noopener"
+    >
+      <img src="images/バリア_YOUNG OLD .jpg" alt="">
+      <p>SixTONES –「バリア」from 「YOUNG OLD」2025.02.22 KYOCERA DOME OSAKA</p>
+      </a>
+    </div>
+
+    <div class="video-item">
+      <a
+      href="https://youtu.be/i1vFBbG_4mQ?si=98HsaSgWCSwf4Fu2"
+      target="_blank"
+      rel="noopener"
+    >
+      <img src="images/DRAMA.JPG" alt="">
+      <p>SixTONES –「DRAMA」from LIVE DVD/BD「VVS」(2024.4.22 TOKYO DOME)</p>
+      </a>
+    </div>
+
+    <div class="video-item">
+      <a
+      href="https://youtu.be/IxxcTcHO2Z8?si=UOGIF8c_Hp8MNbgx"
+      target="_blank"
+      rel="noopener"
+    >
+      <img src="images/WHIP THAT.jpg" alt="">
+      <p>SixTONES –「WHIP THAT」from LIVE DVD/BD「VVS」(「ごぶごぶフェスティバル2024」2024.05.12)</p>
+      </a>
+    </div>
+
+    <div class="video-item">
+      <a
+      href="https://youtu.be/hzYTnMogIM4?si=EZye1iL9kApHUfJh"
+      target="_blank"
+      rel="noopener"
+    >
+      <img src="images/GONG__.jpg" alt="">
+      <p>SixTONES –「GONG」from 5th Album「GOLD」(「Talking Rock! FES.2024」2024.07.06)</p>
+      </a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<section id="music">
+  <h2>MUSIC</h2>
+
+  <ul class="music-list">
+    <li data-audio="audio/Imitation Rain.mp3">Imitation Rain</li>
+    <li data-audio="audio/CREAK.mp3">CRAKE</li>
+    <li data-audio="audio/PARTY PEOPLE.mp3">PARTY PEOPLE</li>
+    <li data-audio="audio/僕が僕じゃないみたいだ.mp3">僕が僕じゃないみたいだ</li>
+    <li data-audio="audio/DRAMA.mp3">DRAMA</li>
+    <li data-audio="audio/ABARERO.mp3">ABARERO</li>
+    <li data-audio="audio/Good Luck!.mp3">Good Luck!</li>
+    <li data-audio="audio/Stargaze.mp3">Stargaze</li>
+
+    <li data-audio="audio/ふたり.mp3">ふたり</li>
+    <li data-audio="audio/JAPONICA STYLE.mp3">JAPONICA STYLE</li>
+    <li data-audio="audio/アンセム.mp3">アンセム</li>
+    <li data-audio="audio/Boom-Pow-Wow!.mp3">Boom-Pow-Wow!</li>
+    <li data-audio="audio/マスカラ.mp3">マスカラ</li>
+    <li data-audio="audio/バリア.mp3">バリア</li>
+    <li data-audio="audio/こっから.mp3">こっから</li>
+  </ul>
+
+<p id="now-playing">
+  <span class="np-label">Now Playing</span>
+  <span class="np-title"></span>
+</p>
+
+  <div class="controls">
+    <button id="shuffle-main">🔀</button>
+    <button id="prev">⏮</button>
+    <button id="play-toggle">▶</button>
+    <button id="next">⏭</button>
+    <button id="repeat-main">🔁</button>
+  </div>
+
+  <div class="player">
+    <span id="current-time">0:00</span>
+    <input type="range" id="seek-bar" value="0" min="0" step="1">
+    <span id="duration">0:00</span>
+  </div>
+</section>
+
+<footer class="site-footer">
+<ul class="sns-list footer-sns">
+  <li>
+    <a href="https://x.com/SixTONES_SME" target="_blank" rel="noopener">X</a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/sixtones_official/" target="_blank" rel="noopener">
+      Instagram
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/@sixtones_official" target="_blank" rel="noopener">
+      YouTube
+    </a>
+  </li>
+  <li>
+    <a href="https://www.tiktok.com/@sixtones_sme" target="_blank" rel="noopener">
+      TikTok
+    </a>
+  </li>
+  <li>
+    <a href="https://sixtones.lnk.to/ArtistAW" target="_blank" rel="noopener">
+      Streaming
+    </a>
+  </li>
+</ul>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/index.js"></script>
+</script>
+</body>
+</html>

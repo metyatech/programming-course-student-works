@@ -1,0 +1,796 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* 共通部分 ---------------------------------------------------*/
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: #ddd 1px solid;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0;
+}
+
+/* 上に戻るボタン */
+.top.header {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: #1976d2;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+footer {
+    padding: 20px;
+    padding-left: 50px;
+    display: flex;
+    gap: 50px;
+    background-color: #203952;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+footer .top {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #203952;
+}
+
+footer a {
+    color: #fff;
+}
+
+h1 {
+
+    font-size: 64px;
+    color: #203952;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    font-family: 'Playfair Display';
+}
+
+h2 {
+    font-size: 58px;
+    color: #203952;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-size: 36px;
+    color: #203952;
+}
+
+h4 {
+    font-size: 32px;
+    color: #203952;
+}
+
+/* :hoverの設定------------------- */
+
+.home-c:hover {
+    color: #1976d2;
+}
+
+.about-c:hover {
+    color: #1976d2;
+}
+
+.gallery-c:hover {
+    color: #1976d2;
+}
+
+.menu-c:hover {
+    color: #1976d2;
+}
+
+/* 各ページ共通部分ここまで -------------------------------------*/
+/* home.html専用スタイル -------------------------------------*/
+.mainvisual img {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin-bottom: 150px;
+    padding: 20px;
+}
+
+/* mainvisualセクションのスタイル */
+
+.mainvisual {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    gap: 20px;
+}
+
+.mainvisual .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.mainvisual p {
+    font-size: 36px;
+    color: #555;
+}
+
+/* home .about-------------*/
+.about {
+    position: relative;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-tab {
+    cursor: pointer;
+}
+
+.about-setumei {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.about p {
+    width: 420px;
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+.about img {
+    width: 700px;
+    height: 450px;
+    margin-left: 50px;
+
+}
+
+
+
+/* :hoverの設定------------------- */
+
+.jagua:hover {
+    color: #1976d2;
+    font-size: 40px;
+    transition: all .3s
+}
+
+.henna:hover {
+    color: #1976d2;
+    font-size: 40px;
+    transition: all .3s
+}
+
+.inkbox:hover {
+    color: #1976d2;
+    font-size: 40px;
+    transition: all .3s
+}
+
+/* home .aboutここまで-------------*/
+/* home.feature-----------------*/
+.feature-title {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+table {
+    margin: 40px auto;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 50px 20px;
+    font-size: 36px;
+    width: 500px;
+    text-align: center;
+}
+
+td {
+    padding: 20px 70px;
+    font-size: 23px;
+}
+
+.card.recommend {
+    width: 800px;
+    margin: 80px auto;
+    padding: 30px;
+    border: 2px solid #203952;
+    border-radius: 10px;
+}
+
+.card.recommend h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card.recommend ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.card.recommend li {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* home.featureここまで-----------------*/
+
+/* home.flow-----------------*/
+
+.flow-section {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 90%;
+    display: grid;
+    gap: 20px;
+}
+
+.flow-section p {
+    font-size: 20px;
+}
+
+.flow-section h4 {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.flow {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+}
+
+.flow li {
+    background-color: #eff5f9;
+    border: 2px solid #06182a;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* home.flowここまで----------------- */
+/* home.qa-----------------*/
+.qa-section {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 1050px;
+    margin: 80px auto;
+    padding: 30px;
+    border: 2px solid #203952;
+    border-radius: 10px;
+}
+
+.qa-section h2 {
+    margin-bottom: 40px;
+}
+
+.qa {
+    list-style-type: none;
+}
+
+.qa li {
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.qa p {
+    font-size: 24px;
+    line-height: 2.5rem;
+}
+
+/* home.qaここまで-----------------*/
+
+/* about.html-------------------------- */
+/* about.detail -----------------------------*/
+.detail-section {
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.detail-section h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #06182a;
+}
+
+.detail-section li {
+    font-size: 20px;
+    list-style: none;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    width: 390px;
+}
+
+.detail {
+    width: 390px;
+    border: #06182a 2px solid;
+    margin: 0 auto;
+}
+
+.main-about h3 {
+    margin: 0 auto;
+    text-align: center;
+    width: 1100px;
+    margin-bottom: 70px;
+    border-top: 5px solid #203952;
+    border-bottom: 5px solid #203952;
+    padding: 20px 0;
+}
+
+.main-about h4 {
+    margin: 0 auto;
+    width: 1100px;
+    margin-bottom: 70px;
+    border-bottom: 5px solid #203952;
+    padding: 10px 0;
+}
+
+.main-about p {
+    font-size: 24px;
+    line-height: 2rem;
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.main-about img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    width: 600px;
+    height: auto;
+}
+
+.main-about ul {
+    width: 1100px;
+    margin: 0 auto;
+    font-size: 24px;
+    margin-bottom: 70px;
+}
+
+.main-about li {
+    margin-bottom: 20px;
+    line-height: 2rem;
+}
+
+/* :hoverの設定 ---------*/
+.nav-a:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-b:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-c:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-d:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-e:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-f:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-g:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-h:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-i:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-j:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+.nav-k:hover {
+    font-size: 22px;
+    transition: all .3s
+}
+
+
+/* about.htmlここまで -----------------------------*/
+/* gallery.html-------------------------- */
+.gallery-item {
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    transition: all .3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 270px;
+    border: 2px solid #203952;
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    display: block;
+}
+
+
+.gallery-item p {
+    font-size: 22px;
+    color: #fff;
+}
+
+.gallery-p{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom:40px ;
+}
+
+.gallery-item div {
+    margin-top: 0;
+    background-color: #203952;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin: 100px auto;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+
+/* gallery.htmlここまで --------------------------*/
+/* menu.html-------------------------- */
+
+.menu-content {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 50%;
+    border: #203952 2px solid;
+}
+
+.menu-ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.menu-li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px;
+}
+
+.menu-section p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+    color: #06182a;
+    margin-bottom: 100px;
+}
+
+.menu-section h2 {
+    font-size: 48px;
+}
+
+/* menu.htmlここまで------------------------------- */
+/* ※ここから先はAIさんとても助けていただいています。※ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+/* note.html設定--------------------------------------- */
+
+.note {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 100px;
+}
+
+.note h1 {
+    font-size: 64px;
+    color: #203952;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.note h2 {
+    font-size: 48px;
+    color: #203952;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #203952;
+    padding-bottom: 15px;
+}
+
+.note h3 {
+    font-size: 36px;
+    color: #203952;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.note p {
+    font-size: 20px;
+    line-height: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.yodan {
+    color: #666;
+    font-style: italic;
+    cursor: pointer;
+    user-select: none;
+    padding: 15px 20px;
+    background: #eff5f9;
+    border: 2px solid #203952;
+    border-radius: 8px;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+
+.yodan:hover {
+    background: #d4e7f5;
+}
+
+.yodan::before {
+    content: '▶ ';
+    display: inline-block;
+    transition: transform 0.3s;
+    margin-right: 8px;
+}
+
+.yodan.open::before {
+    transform: rotate(90deg);
+}
+
+.yodan-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 0 20px;
+}
+
+.yodan-content.show {
+    max-height: 2000px;
+    opacity: 1;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+.yodan-content a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.yodan-content a:hover {
+    text-decoration: underline;
+}
+
+/* note.html設定終わり ============----------------------------*/
+/* 気にしないで ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.aaa {
+    margin: 2000px auto;
+}
+
+
+
+/* atogaki.html設定 ----------------------------------- */
+
+/* 認証画面 */
+#auth-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.auth-box {
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+.auth-box h2 {
+    font-size: 32px;
+    color: #203952;
+    margin-bottom: 20px;
+}
+
+.auth-box p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#password-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #203952;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+#password-input:focus {
+    border-color: #1976d2;
+}
+
+#auth-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #203952;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#auth-btn:hover {
+    background-color: #1976d2;
+}
+
+#auth-error {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 15px;
+    display: none;
+}
+
+#protected-content {
+    display: none;
+}
+
+/* atogaki本文 */
+#protected-content h1 {
+    font-size: 48px;
+    color: #203952;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+#protected-content h2 {
+    font-size: 36px;
+    color: #203952;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#protected-content h2 a {
+    color: #1976d2;
+    text-decoration: underline;
+}
+
+#protected-content > p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 2rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+#protected-content h3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 36px;
+    color: #203952;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #203952;
+    padding-bottom: 15px;
+}
+
+#protected-content h3 + p {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 2rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+

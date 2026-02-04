@@ -1,0 +1,729 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Zen Old Mincho", serif;
+}
+
+.zen-old-mincho-regular {
+    font-family: "Zen Old Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zen-old-mincho-bold {
+    font-family: "Zen Old Mincho", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Evefont";
+    src: url(../font/Evefont-Regular.woff2) format("woff2"),
+        url(../font/Evefont-Regular.ttf) format("truetype"); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 共通部分
+--------------------------------------------------------*/
+
+
+body {
+    background-color: #111;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.head img {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.head a {
+    color: #fff;
+}
+
+.head a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-family: "Evefont", "Zen Old Mincho", serif;
+    background-color: #333;
+    padding: 12px;
+    transition: opacity 0.4s ease;
+}
+
+/* 文字だけを包む span にアニメーションを適用 */
+h1 span {
+    font-family: 'Evefont';
+    transition: opacity 0.3s ease;
+}
+
+h1 span.fade {
+    opacity: 0;
+}
+
+.main h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 12px;
+    font-size: 50px;
+    font-family: "Evefont", "Zen Old Mincho", serif;
+    background-color: #333;
+    transition: opacity 0.4s ease;
+}
+
+/* 文字だけを包む span にアニメーションを適用 */
+h2 span {
+    font-family: 'Evefont';
+    transition: opacity 0.3s ease;
+}
+
+h2 span.fade {
+    opacity: 0;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-family: "Evefont", "Zen Old Mincho", serif;
+    transition: opacity 0.4s ease;
+}
+
+h3 span {
+    font-family: 'Evefont';
+    transition: opacity 0.3s ease;
+}
+
+h3 span.fade {
+    opacity: 0;
+}
+
+/* ナビゲーション
+--------------------------------------------------------*/
+
+nav {
+    color: #fff;
+    border-bottom: 1px solid #aaa;
+    margin: 0 0 20px;
+    padding: 12px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+nav li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav li:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+nav a.active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+
+/* KV
+--------------------------------------------------------*/
+
+.kv {
+    max-width: 1440px;
+}
+
+.kvpic img {
+    width: 100%;
+}
+
+
+/* Introduction
+--------------------------------------------------------*/
+
+.eve h2 {
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.text1 img {
+    width: 300px;
+    height: 300px;
+    margin: auto 0;
+}
+
+.text1 {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.text1 h2 {
+    margin-bottom: 20px;
+}
+
+.text1 p {
+    color: #fff;
+    width: 750px;
+    margin-bottom: 5px;
+    line-height: 2rem;
+}
+
+
+/* ALBUM 
+--------------------------------------------------------*/
+
+.album {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.albums img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.albums p {
+    color: #fff;
+    font-family: "Zen Old Mincho", serif;
+    text-align: center;
+}
+
+.albums img:hover {
+    transition: all 2s;
+    transform: scale(1.2);
+}
+
+
+/* detail 
+--------------------------------------------------------*/
+
+.detail {
+    display: none;
+    transition: all 2s;
+}
+
+.detail>div {
+    display: none;
+}
+
+.detail a,
+.detail img {
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+}
+
+.detail p {
+    color: #fff;
+    margin: 10px;
+}
+
+.detail li::marker {
+    color: #fff;
+}
+
+.detail ol {
+    width: fit-content;
+    max-height: 1000px;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+}
+
+.ww {
+    width: 400px;
+    margin: auto 20px;
+
+}
+
+.t {
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.ww-detail,
+.rr-detail,
+.on-detail,
+.bunka-detail,
+.otogi-detail,
+.smile-detail,
+.kaizin-detail,
+.ub-detail {
+    display: none;
+    flex-direction: row;
+    gap: 50px;
+    width: 1000px;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* 表示時にflexを適用 */
+.ww-detail[style*="block"],
+.rr-detail[style*="block"],
+.on-detail[style*="block"],
+.bunka-detail[style*="block"],
+.otogi-detail[style*="block"],
+.smile-detail[style*="block"],
+.kaizin-detail[style*="block"],
+.ub-detail[style*="block"] {
+    display: flex !important;
+    flex-direction: row;
+}
+
+.detail.show {
+    display: block;
+    width: 100%;
+    /* min-height: 500px; */
+    margin-top: 50px;
+}
+
+
+/* Live
+--------------------------------------------------------*/
+
+#live {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.live-pic {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.live h2 {
+    margin-top: 50px;
+}
+
+.lives {
+    width: 800px;
+    margin: auto;
+}
+
+.lives a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.live-title:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.lives ul {
+    list-style-type: none;
+    color: #fff;
+    /* text-align: center; */
+    /* margin: 0 150px 0 150px; */
+    border-top: 1px solid #999;
+}
+
+.lives li {
+    border-bottom: 1px solid #999;
+    padding: 25px;
+}
+
+.live-title {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    width: max-content;
+}
+
+.more {
+    font-size: 20px;
+    padding: 20px;
+    text-align: right;
+    color: #fff;
+}
+
+
+/* footer
+--------------------------------------------------------*/
+
+.footer {
+    /* height: 200px; */
+    background-color: #000;
+}
+
+.end p {
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+
+/* Discography.html
+--------------------------------------------- */
+
+#album img,
+#single img {
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+
+#album p,
+#single p {
+    color: #fff;
+    padding: 0;
+}
+
+#album .title,
+#single .title {
+    font-weight: 700;
+}
+
+#album p:not(.title),
+#single p:not(.title) {
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+#album.look,
+#single.look {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+
+
+/* ▼ 最初は album を非表示にする */
+#album.none,
+#single.none {
+    display: none;
+}
+
+.tab-single.bc,
+.tab-album.bc {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+}
+
+.cd .active {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+}
+
+
+/* live.html
+--------------------------------------------- */
+
+.move {
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-click {
+    pointer-events: none;
+    cursor: default;
+}
+
+.no-click:hover {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+
+/* UNDERCOVER.html
+--------------------------------------------- */
+
+#live-list {
+    margin-bottom: 50px;
+}
+
+
+.live-name {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding: 50px 0 0 0;
+    margin-bottom: 10px;
+}
+
+.live-name img {
+    margin: auto 0;
+}
+
+#live-list a {
+    padding: 20px;
+}
+
+.live-list {
+    margin: auto 0;
+    width: 600px;
+}
+
+.live-list p {
+    color: #fff;
+}
+
+.live-list .t {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.live-list .title {
+    font-size: 70px;
+    padding: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+#live-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.day1.look,
+.day2.look {
+    display: block;
+}
+
+/* ▼ 最初は day2 を非表示にする */
+.day1.none,
+.day2.none {
+    display: none;
+}
+
+.setlist {
+    /* text-align: left; */
+    list-style-position: inside;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-top: 30px;
+}
+
+
+.setlist li {
+    padding-bottom: 10px;
+}
+
+.encore p {
+    font-size: 24px;
+    padding: 1rem 0;
+}
+
+nav li.active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.day {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* Under Blue.html
+--------------------------------------------- */
+
+.NAGOYA,
+.OSAKA,
+.FUKUOKA,
+.SENDAI,
+.KANAGAWA,
+.Hong-Kong,
+.Korea,
+.Singapore,
+.Malaysia,
+.Indonesia,
+.Taiwan,
+.Yokohama {
+    position: relative;
+}
+
+.days {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    border: solid #ddd 1px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: max-content;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px) scale(0.95) rotate(-3deg);
+    transform-origin: top left;
+    transition: all 0.3s;
+}
+
+.days>li {
+    padding: 12px 20px;
+    cursor: pointer;
+    opacity: 0;
+    /* 最初は各項目を透明に */
+    transform: translateX(-10px);
+    /* 少し左にずらした状態から開始 */
+    transition: opacity 0.3s, transform 0.3s;
+    /* 各項目のアニメーション */
+}
+
+.days>li:hover {
+    background-color: #f5f5f5;
+}
+
+/* 各サブメニュー項目の遅延設定 */
+.days>li:nth-child(1) {
+    transition-delay: 0.1s;
+    /* 1番目は0.1秒遅れて表示 */
+}
+
+.days>li:nth-child(2) {
+    transition-delay: 0.2s;
+    /* 2番目は0.2秒遅れて表示 */
+}
+
+.days.open {
+    opacity: 1;
+    visibility: visible;
+    transform: revert;
+}
+
+/* サブメニューが開いたときの、各項目の設定 */
+.days.open>li {
+    opacity: revert;
+    /* 元の位置に */
+    transform: revert;
+    /* 元の位置に */
+}
+
+.NAGOYA-day1.look,
+.NAGOYA-day2.look,
+.OSAKA-day1.look,
+.OSAKA-day2.look,
+.FUKUOKA-day1.look,
+.FUKUOKA-day2.look,
+.SENDAI-day1.look,
+.SENDAI-day2.look,
+.KANAGAWA-day1.look,
+.KANAGAWA-day2.look,
+.Hong-Kong-day.look,
+.Korea-day.look,
+.Singapore-day.look,
+.Malaysia-day.look,
+.Indonesia-day.look,
+.Taiwan-day.look,
+.Yokohama-day.look {
+    display: block;
+}
+
+/* ▼ 最初は day2 を非表示にする */
+.NAGOYA-day1.none,
+.NAGOYA-day2.none,
+.OSAKA-day1.none,
+.OSAKA-day2.none,
+.FUKUOKA-day1.none,
+.FUKUOKA-day2.none,
+.SENDAI-day1.none,
+.SENDAI-day2.none,
+.KANAGAWA-day1.none,
+.KANAGAWA-day2.none,
+.Hong-Kong-day.none,
+.Korea-day.none,
+.Singapore-day.none,
+.Malaysia-day.none,
+.Indonesia-day.none,
+.Taiwan-day.none,
+.Yokohama-day.none {
+    display: none;
+}
+
+.NAGOYA.active,
+.OSAKA.active,
+.FUKUOKA.active,
+.SENDAI.active,
+.KANAGAWA.active,
+.Hong-Kong.active,
+.Korea.active,
+.Singapore.active,
+.Malaysia.active,
+.Indonesia.active,
+.Taiwan.active,
+.Yokohama.active {
+    border-bottom: 1px solid #fff;
+}
+
+.tab-Day1.active,
+.tab-Day2.active,
+.tab-Day3.active,
+.tab-Day4.active,
+.tab-Day5.active,
+.tab-Day6.active,
+.tab-Day7.active,
+.tab-Day8.active,
+.tab-Day9.active,
+.tab-Day10.active {
+    color: #0bd;
+    /* background-color: #0bd; */
+}

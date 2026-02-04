@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+/* 初期設定 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Hina Mincho", serif;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+body {
+    background-color: #FEF4F4;
+    position: relative;
+}
+
+/* header------------------------------------ */
+header {
+    background-color: #FBFAF5;
+    width: 100%;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 80px;
+    margin: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 60px 0 0 100px;
+}
+
+.text>img {
+    margin: 0 0 130px 0;
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    letter-spacing: .5em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.catchphrase {
+    font-weight: normal;
+    font-size: 40px;
+    text-align: right;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+h1>span {
+    color: red;
+    font-size: 60px;
+}
+
+/* main------------------------------------- */
+#intro {
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#intro img {
+    width: 580px;
+    height: 480px;
+}
+
+#intro div {
+    writing-mode: vertical-rl;
+}
+
+#intro h2,
+#intro p {
+    margin: 0;
+}
+
+
+#intro h2 {
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding: 0 40px;
+}
+
+#intro p {
+    font-size: 23px;
+    text-align: start;
+    padding: 0;
+    line-height: 2.4;
+}
+
+/* リスト-------------------- */
+#proud {
+    padding: 100px 200px;
+}
+
+#proud>div {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#proud h2 {
+    padding: 50px;
+    text-align: center;
+}
+
+#proud h3 {
+    font-size: 27px;
+}
+
+#proud ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#proud ul:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+#proud>div>ul>div {
+    width: 493px;
+    display: grid;
+    place-content: center;
+}
+
+#proud div div div {
+    width: 330px;
+}
+
+/* 店舗ーーーーーーーーーーーーーーー */
+#tenpo h2 {
+    writing-mode: vertical-rl;
+}
+
+.tatesen {
+    border-bottom: 3px solid #000;
+}
+
+.yokosen p {
+    border-left: 3px solid #000;
+}
+
+#tenpo {
+    padding: 100px 50px;
+    position: relative;
+}
+
+/* 装飾の花（左上） */
+.decor-flowers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 0;
+}
+
+.tenpo-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* タイトル（縦書き） */
+.tenpo-title h2 {
+    writing-mode: vertical-rl;
+    letter-spacing: 0.5em;
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+/* コンテンツエリア（右側） */
+.tenpo-content {
+    flex: 1;
+    max-width: 900px;
+}
+
+/* メイン店舗（日本橋） */
+.main-store {
+    display: flex;
+    align-items: flex-end;
+    /* 下揃え */
+    margin-bottom: 80px;
+    gap: 0;
+    /* 画像とテキストの隙間をなくす */
+}
+
+.store-text.tatesen-wrap {
+    margin-right: 0;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    width: 200px;
+    text-align: left;
+}
+
+.store-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.store-type {
+    font-size: 16px;
+    color: #333;
+}
+
+.store-img img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    /* block */
+}
+
+/* スライダーエリア */
+.slider-wrapper {
+    width: 100%;
+    padding-right: 50px;
+}
+
+.slider-item {
+    margin-right: 30px;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 0;
+    display: flex;
+    /* block */
+}
+
+.slider-text.yokosen-wrap {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+.s-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.s-type {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Slick Slider 矢印カスタマイズ */
+.slick-prev:before,
+.slick-next:before {
+    color: #333;
+    font-size: 24px;
+}
+
+.slick-next {
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: #d3d3d3 !important
+}
+
+.slick-next:before {
+    content: '›';
+    font-family: serif;
+    font-size: 30px;
+    line-height: 0;
+    margin-bottom: 5px;
+    color: #d3d3d3;
+}
+
+.slick-prev {
+    display: none !important;
+}
+
+/* お知らせーーーーーーーーーーーーーーーー */
+#news {
+    margin: 170px 0;
+}
+
+#news h2 {
+    padding: 50px;
+    text-align: center;
+}
+
+.tateretu {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.yokoretu {
+    display: flex;
+    width: 1143px;
+    gap: 160px;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    padding-left: 100px;
+
+}
+
+/* オンラインショップーーーーーーーーーーーーーーーー */
+.onlineshop {
+    padding: 80px;
+}
+
+.btn {
+    display: flex;
+    width: 350px;
+    height: 100px;
+    padding: 15px 0;
+    color: #fff;
+    margin: 30px auto;
+    font-size: 20px;
+    background-color: #E95295;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #E95295;
+    font-weight: bold;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+/* footer---------------------------- */
+footer {
+    background-color: #FBFAF5;
+}
+
+.menu2 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    letter-spacing: .5em;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    object-fit: cover;
+    height: 117px;
+    width: 107px;
+    position: relative;
+    top: -30px;
+    left: -40px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    width: 28px;
+    height: 28px;
+    padding: 20px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    gap: 50px;
+}
+
+footer p {
+    text-align: center;
+    padding-bottom: 40px;
+}

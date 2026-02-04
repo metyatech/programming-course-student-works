@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #006341;
+    overflow: auto;
+}
+
+
+/* ヘッダー */
+
+.top {
+    height: 90px;
+    background-color: #006341;
+    display: flex;
+    position: relative;
+}
+
+.top img {
+    background-size: cover;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 3px;
+    left: 30px;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+}
+
+.nav li {
+    font-size: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Inknut Antiqua", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* キービジュアル */
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+.swiper h1 {
+    font-family: "Zen Old Mincho", serif;
+    font-weight: 400;
+    font-size: 95px;
+    letter-spacing: 3px;
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    right: 130px;
+    z-index: 100;
+}
+
+
+.kv {
+    background-image: url(img/47311964e9d711b1cb396bc194587cbb.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.kv2 {
+    background-image: url(img/b80ac4db7acece8e976dd83439e5eff5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.kv3 {
+    background-image: url(img/ph_main_202405_Pr7YGenb.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.kv4 {
+    background-image: url(img/20240305-dm-115001.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+/* ミセスの紹介 */
+
+#shokai {
+    width: 1000px;
+    height: 450px;
+    background-color: #01442D;
+    margin: 200px auto;
+}
+
+#shokai h2 {
+    font-family: "Zen Old Mincho", serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #FFD700;
+    text-align: center;
+    padding: 40px;
+}
+
+#shokai p {
+    color: #fff;
+    text-align: center;
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* 最新情報 */
+
+#joho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px;
+}
+
+#joho h2 {
+    font-family: "Inknut Antiqua", sans-serif;
+    font-size: 36px;
+    color: #69E65B;
+    text-align: center;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 35px;
+    list-style-type: none;
+}
+
+.news li {
+    width: 1000px;
+    height: 90px;
+    background-color: #59AA37;
+    border-radius: 15px;
+    color: #fff;
+    position: relative;
+}
+
+.news li:hover {
+    color: #000;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.news-area {
+    color: #000;
+}
+
+.news h3 {
+    font-size: 22px;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.news p {
+    font-size: 17px;
+    position: absolute;
+    top: 52px;
+    left: 35px;
+}
+
+/* メンバー写真 */
+
+#member {
+    max-width: 1300px;
+    margin: 200px auto;
+
+}
+
+#member h2 {
+    font-family: "Inknut Antiqua", sans-serif;
+    font-size: 36px;
+    color: #69E65B;
+    text-align: center;
+    margin: 50px;
+}
+
+.mrs {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Fujisawa {
+    width: 600px;
+    height: 550px;
+    border-radius: 15px;
+    background-image: url(img/6c19ff5c11492380695db8529bdbe018.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.Fujisawa:hover {
+    width: 685px;
+    height: 600px;
+    transform: translateY(-50px);
+    transition: all .4s;
+    box-shadow: 0 6px 14px rgb(167, 218, 32);
+}
+
+.Fujisawa p {
+    color: #FFEE59;
+    font-family: "Shippori Mincho", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    bottom: 12px;
+    left: 100px;
+}
+
+.omori {
+    width: 600px;
+    height: 550px;
+    border-radius: 15px;
+    background-image: url(img/8d7ffc89abe24ac41aeb55cba8e8eab8.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.omori:hover {
+    width: 685px;
+    height: 600px;
+    transform: translateY(-50px);
+    transition: all .4s;
+    box-shadow: 0 6px 14px rgba(167, 218, 32);
+}
+
+
+.omori p {
+    color: #FF4E4E;
+    font-family: "Shippori Mincho", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    bottom: 12px;
+    left: 120px;
+}
+
+.wakai {
+    width: 600px;
+    height: 550px;
+    border-radius: 15px;
+    background-image: url(img/c15133e74eecd7353a61418e608463a4.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.wakai:hover {
+    width: 685px;
+    height: 600px;
+    transform: translateY(-50px);
+    transition: all .4s;
+    box-shadow: 0 6px 14px rgb(167, 218, 32);
+}
+
+
+.wakai p {
+    color: #6B41FF;
+    font-family: "Shippori Mincho", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    bottom: 12px;
+    left: 120px;
+}
+
+/* 動画紹介 */
+
+#video {
+    margin: 200px;
+}
+
+#Video h2 {
+    font-family: "Inknut Antiqua", sans-serif;
+    font-size: 36px;
+    color: #69E65B;
+    text-align: center;
+    margin: 50px;
+}
+
+.sns {
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sns-item {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    aspect-ratio: 16/9;
+    gap: 20px;
+}
+
+
+/* 曲紹介 */
+
+#music {
+    max-width: 1140px;
+    margin: 200px auto;
+}
+
+#music h2 {
+    font-family: "Inknut Antiqua", sans-serif;
+    font-size: 36px;
+    color: #69E65B;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 70px 35px;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.cd img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.cd img:hover {
+    transform: translateY(-10px);
+    transition: all .3s;
+    box-shadow: 0 5px 14px rgb(0, 0, 0, .8);
+}
+
+
+/* フッター */
+footer {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+}
+
+@media (max-width: 768px) {
+
+
+    /* headerの設定 */
+
+    .top img {
+        left: -10px;
+    }
+
+    .nav ul {
+        gap: 30px;
+        top: 25px;
+        right: 30px;
+    }
+
+    .nav li {
+        font-size: 15px;
+    }
+
+    .nav a {
+        font-size: 15px;
+    }
+
+
+
+
+    /* キービジュの設定 */
+    .kw {
+        background-position: center center;
+    }
+
+    .swiper {
+        height: 100%;
+        height: 600px;
+    }
+
+
+    .swiper h1 {
+        font-size: 60px;
+        left: 20px;
+    }
+
+    /* 紹介の設定 */
+
+    #shokai {
+        max-width: 500px;
+        height: 600px;
+        margin: 120px auto;
+    }
+
+    #shokai p {
+        width: 400px;
+        height: 120px;
+    }
+
+    /* お知らせの設定 */
+    #joho {
+        margin: 120px;
+    }
+
+    .news li {
+        width: 500px;
+        height: 150px;
+    }
+
+    .news h3 {
+        font-size: 20px;
+        left: 28px;
+    }
+
+    .news p {
+        flex-wrap: wrap;
+        font-size: 16px;
+        top: 60px;
+        left: 28px;
+    }
+
+    /* メンバーの設定 */
+    #member {
+        margin: 120px auto;
+    }
+
+    .mrs {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .omori,
+    .Fujisawa,
+    .wakai {
+        width: 480px;
+        height: 500px;
+    }
+
+    .omori:hover,
+    .Fujisawa:hover,
+    .wakai:hover {
+        width: 500px;
+        height: 510px;
+    }
+
+
+    /* YouTubeの設定 */
+
+    #Video {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sns {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .sns-item {
+        width: 500px;
+    }
+
+    .sns-item iframe {
+        width: 480px;
+        height: 290px;
+    }
+
+    .sns-item h3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+
+    /* 曲紹介の設定 */
+    #music {
+        max-width: 680px;
+        margin: 120px auto;
+    }
+
+    .grid {
+        gap: 50px 25px;
+    }
+}

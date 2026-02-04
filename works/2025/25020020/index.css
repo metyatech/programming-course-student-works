@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* メインフォント */
+    font-family: "tsumugi", "yosugara ver12";
+    /* 商用利用可 */
+    font-style: normal;
+}
+
+/* リンク ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+a {
+    color: #B39D5A;
+    text-decoration: none;
+}
+/* 押したら色が変わる or 乗せたら色が変わる */
+a:hover {
+    color: #FFF;
+}
+
+
+/* ボタン ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.view-btn {
+    font-family: "Brittany Signature"; /* 商用利用可 */
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.view-btn {
+    outline: 1px solid #B39D5A;
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    padding: 16px 64px;
+    margin: 24px;
+    margin-inline: auto;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s;
+}
+.view-btn::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 100%;
+    height: 100%;
+    background: #eee9e6;
+    z-index: -999;
+    transition: all 0.3s ease;
+}
+.view-btn:hover::before {
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+
+/* TOP ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.top {
+    font-family: "Brittany Signature";
+    /* 商用利用可 */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: #B0D5C0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+
+/* ナビゲーション ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.nv {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 25px;
+    font-size: 20px;
+}
+.nv>li {
+    padding: 20px;
+    cursor: pointer;
+}
+.nv>li:hover {
+    background-color: #B0D5C0;
+}
+
+
+/* ヘッダー ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+h1 {
+    font-family: "Yesteryear", cursive;
+    /* 商用利用可 */
+    font-style: normal;
+    font-size: 70px;
+    margin-bottom: -20px;
+}
+
+.title1 {
+    color: #fff;
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* 画像 */
+    background-image: url(image/header.png);
+    background-repeat: no-repeat;
+    width: 1190px;
+    height: 650px;
+    margin-left: 150px;
+}
+.title2 {
+    font-family: "Brittany Signature"; /* 商用利用可 */
+    font-style: normal;
+    color: #B39D5A;
+
+    /* 背景 */
+    background-color: #B0D5C0;
+    width: 400px;
+    height: 350px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 220px;
+}
+
+header {
+    padding: 0 50px;
+    padding-bottom: 95px;
+}
+
+
+/* CONCEOT ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+#CONCEPT {
+    text-align: center;
+    margin-bottom: -8px;
+    font-size: 30px;
+    max-width: 50%;
+}
+.concept {
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    max-width: 50%;
+}
+
+.section-con {
+    padding: 68px 0;
+
+    /* 画像 */
+    background-image: url(image/concept.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CONTENTS ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.contents {
+    width: 500px;
+    height: 1020px;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* 画像 */
+    background-image: url(image/introduction.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu h3 {
+    text-align: center;
+    background-color: #B0D5C0;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+
+    margin: -10px;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    margin-bottom: -50px;
+}
+.menu-img {
+    border-radius: 50% 50% 0 0;
+}
+
+.contents,p {
+    font-size: 20px;
+}

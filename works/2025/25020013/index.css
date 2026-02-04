@@ -1,0 +1,229 @@
+* {
+    margin: 0 auto;
+}
+
+/* ヘッダー
+--------------------------------- */
+header {
+    background-color: #1d2087;
+    height: 150px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px;
+}
+
+audio {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* 表紙
+--------------------------------- */
+.hyosi {
+    text-align: center;
+}
+
+.hyosi img {
+    border: 0.5px solid black;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    width: 594px;
+    height: 841px;
+    object-fit: cover;
+}
+
+.hyosi.p {
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: 0.5em;
+    margin-bottom: 200px;
+}
+
+/* 人物紹介
+--------------------------------- */
+.syokai {
+    text-align: center;
+    margin-bottom: 200px;
+    margin: 100px;
+}
+
+.syokai img {
+    width: 841px;
+    height: 594px;
+    object-fit: cover;
+    margin-bottom: 200px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.syokai p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.5em;
+    margin-bottom: 200px;
+}
+
+.character {
+    display: flex;
+}
+
+.character img {
+    width: 250px;
+    height: auto;
+}
+
+/* リスト
+--------------------------------- */
+.list ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.list li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.list img {
+    width: 594px;
+    height: 841px;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 0.5px solid black;
+}
+
+/* 終わり
+--------------------------------- */
+.fin {
+    text-align: center;
+}
+
+.fin img {
+    margin: 0 auto;
+    border: 0.5px solid black;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+    width: 594px;
+    height: 841px;
+    object-fit: cover;
+}
+
+.fin p {
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.5em;
+    margin-bottom: 200px;
+}
+
+/* 自己紹介
+--------------------------------- */
+.ziko {
+    background-color: #1d2087;
+    color: white;
+    height: 900px;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.ziko h2 {
+    padding: 30px;
+}
+
+.ziko p {
+    text-align: left;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+}
+
+.ziko h3 {
+    padding: 30px;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill img {
+    margin: 0 auto;
+    border: 0.5px solid black;
+    margin-bottom: 200px;
+
+    width: 594px;
+    height: 841px;
+    object-fit: cover;
+}
+
+
+/* 公式X
+--------------------------------- */
+/* .x {
+    width: 200px;
+    padding: 12px 24px;
+    background: white;
+    color: #1d2087;
+    border: 1px solid #1d2087;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+} */
+
+/* ボタン
+--------------------------------- */
+.btn {
+    width: 200px;
+    background-color: #1d2087;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 200px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #1d2087;
+    border: 1px solid #1d2087;
+}
+
+/* フッター
+--------------------------------- */
+footer {
+    background-color: #1d2087;
+    height: 200px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 70px;
+    line-height: 40px;
+}
+
+footer h3 a {
+    color: #fff;
+}

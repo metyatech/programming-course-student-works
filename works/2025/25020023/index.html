@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>portforio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700&family=Antonio:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+  <!-- SOUND SELECT MODAL -->
+<div id="sound-modal">
+  <div class="sound-box">
+    <p class="sound-title en">Welcome</p>
+    <p class="sound-text">
+      このサイトでは音楽が再生されます。<br>
+    </p>
+
+    <div class="sound-buttons">
+      <button id="sound-on">Sound ON</button>
+      <button id="sound-off">Mute</button>
+    </div>
+  </div>
+</div>
+
+<div id="loading">
+  <div class="loading-inner">
+    <p class="loading-percent en">
+      <span id="count">0</span>%
+    </p>
+
+    <!-- 数字の真下に線 -->
+    <div class="loading-bar">
+      <span id="bar"></span>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+
+  <nav class="menu" id="menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#dream">Dream</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <img src="imag/image 1 1.png" alt="NAO's Portfolio">
+  </div>
+</div>
+
+<!-- MUSIC -->
+<section class="music" id="music">
+  <div class="music-player">
+
+    <p class="music-now">
+  <span class="artist en" id="now-artist"></span>
+  <span class="title" id="now-title"></span>
+</p>
+
+<div class="music-time">
+  <span id="current-time">0:00</span>
+  <input type="range" id="seek-bar" value="0" min="0" step="1">
+  <span id="duration">0:00</span>
+</div>
+
+    <div class="music-controls">
+      <button id="shuffle">🔀</button>
+      <button id="prev">⏮</button>
+      <button id="play">▶</button>
+      <button id="next">⏭</button>
+      <button id="loop">🔁</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+  <section class="about" id="about">
+  <h2 class="en">About</h2>
+
+  <div class="about-layout">
+
+  <dl class="about-dl">
+    <dt class="en">Name</dt>
+    <dd>
+      <span class="kana">たかすぎ なお</span><br>
+      <strong>髙杉 菜央</strong>
+    </dd>
+
+    <dt class="en">Birthday</dt>
+    <dd>2007.1.17</dd>
+
+    <dt class="en">School</dt>
+    <dd>
+      さいたまIT・WEB専門学校<br>
+      情報技術科
+    </dd>
+
+    <dt class="en">Like</dt>
+    <dd>
+      kuromi / 今田美桜 / SixTONES / SnowMan /<br>
+      邦画 / 国内ドラマ / 邦ロック
+    </dd>
+
+    <dt class="en">Skill</dt>
+    <dd>
+      HTML / CSS / JavaScript / Figma / Photoshop /<br>
+      Word / Excel / PowerPoint
+    </dd>
+  </dl>
+
+    <!-- 右画像 -->
+    <ul class="about-images">
+      <li><img src="imag/kuromi.jpeg" alt=""></li>
+      <li><img src="imag/mio.JPG" alt=""></li>
+      <li><img src="imag/SixTONES.jpeg" alt=""></li>
+      <li><img src="imag/SnowMan.jpeg" alt=""></li>
+      <li><img src="imag/watakon.jpg" alt=""></li>
+      <li><img src="imag/firstkiss.jpg" alt=""></li>
+      <li><img src="imag/annpann.JPG" alt=""></li>
+      <li><img src="imag/backnumber.jpg" alt=""></li>
+      <li><img src="imag/sumika.jpg" alt=""></li>
+    </ul>
+    </div>
+  </div>
+</section>
+
+<section class="works" id="works">
+  <h2 class="en">Works</h2>
+
+  <div class="work work-link">
+    <a href="25020023/index.html" target="_blank" rel="noopener" class="work-overlay"></a>
+
+    <img src="imag/Header_Imadamio.png" alt="" class="fit">
+    <div class="text">
+      <h3 class="en">01 / Mio Imada Fanpage</h3>
+      <p>
+        試験制作課題として<br>
+        女優・今田美桜さんをテーマに、<br>
+        魅力が伝わる配色やレイアウトを工夫して<br>
+        Webサイトを制作しました。
+      </p><br>
+      <small>デザイン：2025年7-8月<br>コーディング：2025年11-12月</small>
+    </div>
+  </div>
+
+  <div class="work work-link reverse">
+    <a href="SixTONES/index.html" target="_blank" rel="noopener" class="work-overlay"></a>
+    <img src="imag/Header_SixTONES.png" alt="">
+    <div class="text">
+      <h3 class="en">02 / SixTONES Fanpage</h3>
+      <p>
+        アーティストファンサイトを想定し、<br>
+        SixTONESをテーマにした<br>
+        Webサイトを制作しました。
+      </p><br>
+      <small>デザイン・コーディング：2026年1月</small>
+    </div>
+  </div>
+
+  <div class="work work-link">
+    <a href="https://www.figma.com/proto/Q9xbdPi9zgKf0cGTNCY1ne/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3_%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3?node-id=1-10&t=vnykEPFDuk2GlHYd-1" target="_blank" rel="noopener" class="work-overlay"></a>
+    <img src="imag/Group 3.png" alt="" class="fit">
+    <div class="text">
+      <h3 class="en">03 / My portforio design</h3>
+      <p>
+          自身のポートフォリオサイトを想定し、<br>
+          情報整理と画面遷移を考慮した<br>
+          UI設計・デザイン、コーディングを行いました。
+      </p><br>
+      <small>デザイン・コーディング：2026年1月</small>
+    </div>
+  </div>
+</section>
+
+<!-- DREAM -->
+<section class="dream" id="dream">
+  <h2 class="en">My Heart & Dream</h2>
+
+  <p>
+    私は、感情が分かりやすく、好き嫌いがはっきりしている性格です。<br><br>
+
+    興味のないことにはなかなか集中できませんが、<br>
+逆に「好き」「やってみたい」と思ったことには、<br>
+時間を忘れて没頭するタイプだと思っています。<br><br>
+
+学校生活では、体調や気分の波で欠席してしまうこともありましたが、<br>
+その中でも課題や制作にはできるだけ向き合い、自分なりに形にすることを大切にしてきました。
+<br>特にデザインに関わる作業は、気づくと時間を忘れて取り組んでいることが多いです。<br><br>
+
+私の将来の夢は、動画編集者になることです。<br>
+映像に音や文字、テンポを加えることで、<br>
+見る人の感情を動かせるところに魅力を感じています。<br><br>
+
+映画やドラマ、アーティストの映像作品に触れる中で、<br>
+「どうやって作られているのか」<br>
+「なぜこのシーンは印象に残るのか」<br>
+と考えるようになり、<br>
+自分も映像を作る側になりたいと思うようになりました。<br><br>
+
+これからは、動画編集を中心に、<br>
+映像とデザインの両方の視点を持ちながら、<br>
+見る人の記憶に残る表現ができるよう学んでいきたいと考えています。
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2 class="en">Contact</h2>
+
+  <div class="contact-list">
+    <a href="https://www.tiktok.com/@nao._.nanoda" class="en" target="_blank">TikTok</a>
+    <a href="mailto:siw25020023@class.siw.ac.jp" class="en">Mail</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <small>25020023_髙杉菜央</small>
+</footer>
+</div>
+
+<script>
+/* =========================
+   共通変数
+========================= */
+let loadingTimer = null;
+const audio = new Audio();
+
+/* =========================
+   楽曲データ
+========================= */
+const tracks = [
+  { artist: "NiziU", title: "♡Emotion", src: "audio/♡Emotion.mp3"},
+  { artist: "SixTONES", title: "ABARERO", src: "audio/ABARERO.mp3"},
+  { artist: "SixTONES", title: "Good Luck!", src: "audio/Good Luck!.mp3"},
+  { artist: "SixTONES", title: "バリア", src: "audio/バリア.mp3"},
+  { artist: "SixTONES", title: "こっから", src: "audio/こっから.mp3"},
+  { artist: "Snow Man", title: "BOOST", src: "audio/BOOST.mp3"},
+  { artist: "Snow Man", title: "TRUE LOVE", src: "audio/TRUE LOVE.mp3"},
+  { artist: "Snow Man", title: "Tic Tac Toe", src: "audio/Tic Tac Toe.mp3"},
+  { artist: "Snow Man", title: "Miss Brand-New Friday Night", src: "audio/Miss Brand-New Friday Night.mp3"},
+  { artist: "Snow Man", title: "嫉妬ガール", src: "audio/嫉妬ガール.mp3"},
+  { artist: "=LOVE", title: "とくべチュ、して", src: "audio/とくベチュ、して.mp3"},
+  { artist: "=LOVE", title: "ラブソングに襲われる", src: "audio/ラブソングに襲われる.mp3"},
+  { artist: "CUTIE STREET", title: "ひたむきシンデレラ", src: "audio/ひたむきシンデレラ.mp3"},
+  { artist: "ちゃんみな", title: "命日", src: "audio/命日.mp3"},
+  { artist: "ちゃんみな", title: "Angel", src: "audio/Angel.mp3"},
+  { artist: "ちゃんみな", title: "SAD SONG", src: "audio/SAD SONG.mp3"},
+  { artist: "Bouno!", title: "初恋サイダー", src: "audio/初恋サイダー.mp3"},
+  { artist: "クリープハイプ", title: "おやすみ泣き声、さよなら歌姫", src: "audio/おやすみ泣き声、さよなら歌姫.mp3"},
+  { artist: "優里", title: "恋人じゃなくなった日", src: "audio/恋人じゃなくなった日.mp3"},
+  { artist: "This is LAST", title: "情とは", src: "audio/情とは.mp3"},
+  { artist: "This is LAST", title: "シェイプシスター", src: "audio/シェイプシスター.mp3"},
+  { artist: "RADWIMPS", title: "七ノ歌", src: "audio/七ノ歌.mp3"},
+  { artist: "backnumber", title: "君の恋人になったら", src: "audio/君の恋人になったら.mp3"},
+  { artist: "Vaundy", title: "しわあわせ", src: "audio/しわあわせ.mp3"},
+  { artist: "Vaundy", title: "そんなbitterな話", src: "audio/そんなbitterな話.mp3"},
+];
+
+let currentIndex = 0;
+let isShuffle = false;
+
+/* =========================
+   DOM取得
+========================= */
+document.addEventListener("DOMContentLoaded", () => {
+  const page = document.querySelector(".page");
+
+  const soundModal = document.getElementById("sound-modal");
+  const soundOn = document.getElementById("sound-on");
+  const soundOff = document.getElementById("sound-off");
+
+  const loading = document.getElementById("loading");
+  const countEl = document.getElementById("count");
+  const bar = document.getElementById("bar");
+
+  const artistEl = document.getElementById("now-artist");
+  const titleEl  = document.getElementById("now-title");
+  const musicNow = document.querySelector(".music-now");
+
+  const playBtn = document.getElementById("play");
+  const nextBtn = document.getElementById("next");
+  const prevBtn = document.getElementById("prev");
+  const shuffleBtn = document.getElementById("shuffle");
+  const loopBtn = document.getElementById("loop");
+
+  const seekBar = document.getElementById("seek-bar");
+  const currentTimeEl = document.getElementById("current-time");
+  const durationEl = document.getElementById("duration");
+
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+  const menuLinks = document.querySelectorAll(".menu a");
+
+  /* =========================
+     初期状態
+  ========================= */
+  loading.classList.add("is-hidden");
+
+  /* =========================
+     ローディング処理
+  ========================= */
+  function startLoading(shouldPlay) {
+    let count = 0;
+    soundModal.style.display = "none";
+    loading.classList.remove("is-hidden");
+
+    loadingTimer = setInterval(() => {
+      count++;
+      countEl.textContent = count;
+      bar.style.width = count + "%";
+
+      if (count >= 100) {
+        clearInterval(loadingTimer);
+
+        setTimeout(() => {
+          loading.classList.add("is-hidden");
+          page.classList.add("is-ready");
+
+          if (shouldPlay) playTrack(0);
+        }, 300);
+      }
+    }, 20);
+  }
+
+  soundOn.addEventListener("click", () => startLoading(true));
+  soundOff.addEventListener("click", () => startLoading(false));
+
+  /* =========================
+     再生処理
+  ========================= */
+  function playTrack(index) {
+    currentIndex = index;
+    audio.src = tracks[index].src;
+    audio.play();
+
+    artistEl.textContent = tracks[index].artist;
+    titleEl.textContent = tracks[index].title;
+
+    // 英語曲名だけ en
+    const isEnglish = /^[A-Za-z0-9\s!#&\-]+$/.test(tracks[index].title);
+    titleEl.classList.toggle("en", isEnglish);
+
+    musicNow.classList.add("active");
+    playBtn.textContent = "⏸";
+    seekBar.value = 0;
+  }
+
+  /* =========================
+     プレイヤー操作
+  ========================= */
+  playBtn.addEventListener("click", () => {
+    if (!audio.src) {
+      playTrack(currentIndex);
+      return;
+    }
+    audio.paused ? audio.play() : audio.pause();
+    playBtn.textContent = audio.paused ? "▶" : "⏸";
+  });
+
+  nextBtn.addEventListener("click", () => {
+    playTrack(isShuffle
+      ? Math.floor(Math.random() * tracks.length)
+      : (currentIndex + 1) % tracks.length
+    );
+  });
+
+  prevBtn.addEventListener("click", () => {
+    playTrack((currentIndex - 1 + tracks.length) % tracks.length);
+  });
+
+  shuffleBtn.addEventListener("click", () => {
+    isShuffle = !isShuffle;
+    shuffleBtn.classList.toggle("active");
+  });
+
+  loopBtn.addEventListener("click", () => {
+    audio.loop = !audio.loop;
+    loopBtn.classList.toggle("active");
+  });
+
+  /* =========================
+     時間・シーク
+  ========================= */
+  audio.addEventListener("timeupdate", () => {
+    if (!audio.duration) return;
+    seekBar.max = audio.duration;
+    seekBar.value = audio.currentTime;
+    currentTimeEl.textContent = formatTime(audio.currentTime);
+    durationEl.textContent = formatTime(audio.duration);
+  });
+
+  seekBar.addEventListener("input", () => {
+    audio.currentTime = seekBar.value;
+  });
+
+  audio.addEventListener("ended", () => {
+    playTrack((currentIndex + 1) % tracks.length);
+  });
+
+  function formatTime(t) {
+    const m = Math.floor(t / 60);
+    const s = Math.floor(t % 60).toString().padStart(2, "0");
+    return `${m}:${s}`;
+  }
+
+  /* =========================
+     ハンバーガー
+  ========================= */
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("is-open");
+    menu.classList.toggle("is-open");
+  });
+
+  menuLinks.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute("href"));
+      if (!target) return;
+
+      hamburger.classList.remove("is-open");
+      menu.classList.remove("is-open");
+
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

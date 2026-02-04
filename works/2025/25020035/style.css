@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    font-family: "Aboreto", system-ui;
+    font-weight: 400;
+    color: #e3e3e3;
+}
+
+body {
+    background-color: #1B222A;
+}
+
+/* ファーストビューーーーーーーーーーーーーーーーーーーーーーーーーー */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    box-sizing: border-box;
+    z-index: 300;
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.first-view {
+    background-image: url(img/Mask\ group.png);
+    background-image: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.logo img {
+    width: 65px;
+    height: 80px;
+}
+
+.btn {
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    margin: 12px;
+}
+
+.oya-btn {
+    background: none;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 930px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: #e3e3e3;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 97px;
+    color: #e3e3e3;
+    padding-top: 345px;
+    text-align: center;
+}
+
+.first-view p {
+    color: #e3e3e3;
+    text-align: center;
+    margin-top: 204px;
+}
+
+h2 {
+    font-size: 84px;
+    /* display: inline-block; */
+    background: linear-gradient(90deg, #a38131 0%, #e7c76d 33%, #ffe6c5 62%, #e3c05d 83%, #9d874e 100%);
+    background: -webkit-linear-gradient(0deg, #a38131 0%, #e7c76d 33%, #ffe6c5 62%, #e3c05d 83%, #9d874e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text {
+    font-size: 11px;
+    line-height: 260%;
+    padding-top: 51px;
+    letter-spacing: 20%;
+}
+
+.about-btn {
+    display: inline-block;
+    border: 1px solid #FFF;
+    padding: 12px 22px;
+}
+
+/* コンセプトーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.concept {
+    position: relative;
+    width: 1120px;
+    margin: 0 auto 270px;
+    padding-top: 270px;
+}
+
+.oya-text {
+    width: 352px;
+    padding: 38px 0;
+    font-size: 16px;
+}
+
+.concept-1 {
+    display: flex;
+}
+
+.img1 {
+    position: relative;
+    z-index: 100;
+}
+
+.img2 {
+    position: absolute;
+    top: 335px;
+    left: 255px;
+    z-index: 10;
+}
+
+/* ゲストルームーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.h2-guest {
+    text-align: right;
+}
+
+.guestroom {
+    position: relative;
+    width: 1120px;
+    margin: 0 auto 270px;
+    padding-top: 270px;
+}
+
+.guestroom-1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn1 {
+    position: absolute;
+    top: 631px;
+    right: 0;
+}
+
+.img3 {
+    position: relative;
+    z-index: 100;
+}
+
+.img4 {
+    position: absolute;
+    top: 305px;
+    right: 235px;
+    z-index: 10;
+}
+
+/* レストランーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.restaurant {
+    position: relative;
+    width: 1120px;
+    margin: 0 auto 270px;
+    padding-top: 270px;
+}
+
+.restaurant-1 {
+    display: flex;
+}
+
+.btn2 {
+    position: absolute;
+    top: 603px;
+    left: 0;
+}
+
+.img5 {
+    position: relative;
+    z-index: 100;
+}
+
+.img6 {
+    position: absolute;
+    top: 118px;
+    left: 161px;
+    z-index: 10;
+}
+
+/* スパーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.spa {
+    position: relative;
+    width: 1120px;
+    margin: 0 auto 270px;
+}
+
+.h2-spa {
+    text-align: right;
+}
+
+.spa-1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn3 {
+    position: absolute;
+    top: 312px;
+    right: 0;
+}
+
+.img7 {
+    position: relative;
+    z-index: 100;
+}
+
+.img8 {
+    position: absolute;
+    top: 161px;
+    right: 46px;
+    z-index: 10;
+}
+
+/* -------------------------------------------------------- */
+ul li a {
+    display: block;
+    padding: 8px 12px;
+}
+
+ul li a:hover {
+    background: linear-gradient(90deg, #a38131 0%, #e7c76d 33%, #ffe6c5 62%, #e3c05d 83%, #9d874e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-btn:hover {
+    color: linear-gradient(90deg, #a38131 0%, #e7c76d 33%, #ffe6c5 62%, #e3c05d 83%, #9d874e 100%);
+    background: #a38131;
+    transition: 1s;
+    transform: translateY(3px);
+}
+
+/* TOPへ戻るボタン */
+.back-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .08em;
+    background: linear-gradient(90deg, #a38131 0%, #e7c76d 33%, #ffe6c5 62%, #e3c05d 83%, #9d874e 100%);
+    color: #1B222A;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .35);
+    z-index: 400;
+    transition: transform .25s ease, box-shadow .25s ease, opacity .25s ease;
+}
+
+.back-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .45);
+}
+
+.hamberger-menu {
+    position: absolute;
+    top: 100%;
+    right: 50px;
+    width: min(320px, calc(100vw - 100px));
+    display: block;
+    /* ul全体はブロックでOK */
+    background: rgba(27, 34, 42, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    overflow: hidden;
+    max-height: 0;
+    /* 閉じてる状態 */
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height .35s ease, opacity .25s ease;
+}
+
+.hamberger-menu.is-open {
+    max-height: 400px;
+    /* リンク数に合わせて十分大きく */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hamberger-menu li {
+    width: 100%;
+}
+
+.hamberger-menu a {
+    display: block;
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.hamberger-menu li:last-child a {
+    border-bottom: none;
+}

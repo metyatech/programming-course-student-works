@@ -1,0 +1,775 @@
+/* =========================================
+   共通設定
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+body {
+    background-color: #0C0C0C;
+    color: #ffffff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================================
+   ヘッダーエリア
+   ========================================= */
+.head {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    background-color: #000;
+    border-bottom: 5px solid #6e0000;
+    z-index: 2000;
+}
+
+.logo img {
+    height: 60px;
+    display: block;
+}
+
+.nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu > li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.menu a {
+    font-size: 1.0rem;
+    padding: 18px 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu > li > a:hover {
+    color: #ff4d4d;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    background-color: rgba(10, 10, 10, 0.95);
+    border-top: 2px solid #ff4d4d;
+    border: 1px solid #333;
+    border-top: 2px solid #ff4d4d;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.menu li.open > ul {
+    display: block;
+}
+
+.menu ul a {
+    font-size: 0.95rem;
+    padding: 15px 20px;
+    letter-spacing: 1px;
+    border-left: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.menu ul a:hover {
+    background-color: #1a1a1a;
+    color: #ff4d4d;
+    border-left: 3px solid #ff4d4d;
+    padding-left: 25px;
+}
+
+/* =========================================
+   メインコンテンツ共通
+   ========================================= */
+main {
+    padding-top: 100px;
+}
+
+section {
+    padding: 100px 40px;
+    scroll-margin-top: 100px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 100px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* =========================================
+   ヒーローセクション
+   ========================================= */
+.hero-section {
+    padding: 0;
+    height: calc(100vh - 100px);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image-container,
+.hero-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================================
+   ルール解説セクション
+   ========================================= */
+.rule-section {
+    background-color: #0C0C0C;
+}
+
+.rule-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 60px;
+    margin: 0 auto 40px;
+    max-width: 1200px;
+    gap: 60px;
+    scroll-margin-top: 140px;
+}
+
+.rule-text {
+    flex: 1;
+}
+
+.rule-text h3 {
+    color: #ff4d4d;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.rule-photo {
+    flex-shrink: 0;
+    width: 490px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #333;
+}
+
+.rule-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.rule-text p {
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.rule-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.rule-item .label {
+    flex-shrink: 0;
+    width: auto;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.rule-item .text {
+    flex: 1;
+    text-align: left;
+}
+
+#game-flow ol {
+    padding-left: 0;
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#game-flow ol li {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+}
+
+/* =========================================
+   キャラクター紹介
+   ========================================= */
+.character-section {
+    padding: 80px 40px;
+    background-color: #0C0C0C;
+    text-align: center;
+}
+
+.sub-title {
+    color: #ff4d4d;
+    font-size: 1.8rem;
+    margin: 60px 0 30px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    display: block;
+    padding-bottom: 10px;
+    scroll-margin-top: 120px;
+}
+
+.character-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.char-card {
+    background-color: #1a1a1a;
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 1s ease;
+}
+
+.char-card:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 15px 40px rgba(255, 77, 77, 0.3);
+}
+
+.char-card .char-img.grave-keeper-adjust img {
+    object-position: 85% center !important;
+}
+
+.char-img img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.char-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.char-info .job-title {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* =========================================
+   特大モーダル
+   ========================================= */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 5000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.is-visible {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #111;
+    width: 90vw;
+    max-width: 1200px;
+    display: flex;
+    border: 2px solid #ff4d4d;
+    overflow: hidden;
+    animation: zoomIn 0.3s;
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content img {
+    width: 55%;
+    object-fit: cover;
+    display: block;
+}
+
+#modal-img.grave-focus {
+    object-position: 85% center !important;
+}
+
+.modal-text {
+    width: 45%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: normal;
+}
+
+#modal-name {
+    width: 100%;
+    text-align: center;
+}
+
+#modal-name .job-title {
+    font-size: 3.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#modal-name .char-name {
+    font-size: 1.6rem;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 20px;
+    width: auto;
+}
+
+#modal-name .char-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ff4d4d;
+}
+
+#modal-desc,
+#map-modal-desc {
+    width: 100%;
+    color: #ddd;
+    text-align: left;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+#modal-desc {
+    font-size: 1.25rem;
+    line-height: 2.2;
+    margin-top: 10px;
+}
+
+#map-modal-desc {
+    font-size: 1.1rem;
+    line-height: 2.0;
+    padding: 10px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+/* =========================================
+   ハンバーガー & ドロワー
+   ========================================= */
+.menu-toggle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3000;
+}
+
+.menu-toggle span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    left: 5px;
+    transition: 0.3s;
+}
+
+.menu-toggle span:nth-child(1) { top: 10px; }
+.menu-toggle span:nth-child(2) { top: 20px; }
+.menu-toggle span:nth-child(3) { top: 30px; }
+
+.menu-toggle.is-active span:nth-child(1) { transform: translateY(10px) rotate(45deg); }
+.menu-toggle.is-active span:nth-child(2) { opacity: 0; }
+.menu-toggle.is-active span:nth-child(3) { transform: translateY(-10px) rotate(-45deg); }
+
+.drawer-nav {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    background-color: #1a1a1a;
+    padding: 120px 40px;
+    transition: 0.5s;
+    z-index: 2500;
+    border-left: 2px solid #6e0000;
+}
+
+.drawer-nav.is-open {
+    right: 0;
+}
+
+.drawer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.drawer-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2400;
+}
+
+.drawer-overlay.is-open {
+    display: block;
+}
+
+/* =========================================
+   マップスライダー
+   ========================================= */
+.map-section {
+    background-color: #0C0C0C;
+    padding: 100px 40px;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+.map-card {
+    min-width: calc(33.333% - 20px);
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+.map-card:hover {
+    border-color: #ff4d4d;
+    box-shadow: 0 10px 30px rgba(255, 77, 77, 0.3);
+}
+
+.map-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.map-label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.slider-arrow {
+    background: none;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 2rem;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.map-modal-title {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.map-modal-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff4d4d;
+}
+
+/* =========================================
+   プレイ動画セクション (修正版)
+   ========================================= */
+.pv-section {
+    background-color: #0c0c0c;
+    padding: 100px 40px;
+    text-align: center;
+}
+
+.video-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 3px solid #6e0000;
+    border-radius: 15px;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #000;
+}
+
+.my-video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    display: block;
+}
+
+/* =========================================
+   フッター
+   ========================================= */
+.footer {
+    background-color: #000;
+    border-top: 5px solid #6e0000;
+    padding: 40px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-copy {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #ff4d4d;
+    text-decoration: underline;
+}
+
+/* =========================================
+   スクロールアニメーション
+   ========================================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s ease, transform 1s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.char-card.reveal.active {
+    transform: translateY(0);
+}
+
+/* =========================================
+   スマホ用レスポンシブ設定
+   ========================================= */
+@media screen and (max-width: 768px) {
+    main {
+        padding-top: 0;
+    }
+
+    body .hero-section {
+        height: auto;
+        min-height: 0;
+        padding-top: 100px;
+        display: block;
+    }
+
+    body .hero-image-container img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hero-overlay, .nav {
+        display: none;
+    }
+
+    .head {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    .rule-box {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .rule-photo {
+        width: 100%;
+        height: 200px;
+    }
+
+    .rule-text h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rule-text p, .rule-item {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .rule-item .label {
+        margin-right: 5px;
+    }
+
+    #game-flow ol {
+        padding-left: 0;
+    }
+
+    #game-flow ol li {
+        font-size: 0.95rem;
+        white-space: normal;
+    }
+
+    .modal-content {
+        flex-direction: column;
+        width: 95vw;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    .modal-content img {
+        width: 100%;
+        max-height: 300px;
+    }
+
+    .modal-text {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    #modal-name .char-name {
+        font-size: 1.3rem;
+    }
+
+    #modal-desc {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .slider-wrapper {
+        width: 300px;
+        margin: 0 5px;
+    }
+
+    .slider-inner {
+        gap: 0;
+    }
+
+    .map-card {
+        min-width: 100%;
+    }
+
+    .slider-arrow {
+        flex: 0 0 35px;
+        height: 50px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pv-section {
+        padding: 60px 20px;
+    }
+
+    #js-prev { margin-right: 5px; }
+    #js-next { margin-left: 5px; }
+
+}

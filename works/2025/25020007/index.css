@@ -1,0 +1,1112 @@
+@font-face {
+    font-family: "banana";
+    src: local("YDWbananaslipplus"),
+        url("./font/YDW_bananaslip_plus_240809/YDWbananaslipplus.otf") format("opentype");
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "neutro";
+    src: local("Neutro-ExtraBold"),
+        url("./font/Neutro-ExtraBold.otf") format("opentype");
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "yosugara";
+    src: local("yosugaraver1_2"),
+        url("./font/yosugaraver1_2.ttf") format("opentype");
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    font-family: banana, sans-serif;
+    user-select: none;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    position: relative
+}
+
+.span {
+    display: inline-block;
+}
+
+.div {
+    display: block;
+    user-select: none;
+}
+
+main {
+    position: relative;
+    background: linear-gradient(to left top, #ECE0B4 0, #DC9194 100%);
+    user-select: none;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* hamburger部分
+-------------------------------------------------------- */
+#nav_position {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 50px;
+    width: 30px;
+    height: 100vh;
+    z-index: 100;
+    justify-content: start;
+    align-items: center;
+}
+
+#nav_button {
+    cursor: pointer;
+}
+
+.nav_button_lines {
+    margin-bottom: 3px;
+    position: relative;
+    width: 100%;
+}
+
+.nav_button_line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    max-width: 36px;
+    position: absolute;
+    left: 10%;
+    transition-property: all;
+    transition-duration: .6s;
+    background-color: #fff;
+
+}
+
+.nav_button_line.l01 {
+    top: 0;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.nav_button_line.l02 {
+    top: 5px;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.nav_button_line.l03 {
+    top: 10px;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.6);
+}
+
+.open .nav_button_line.l01 {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.open .nav_button_line.l03 {
+    transform: translateY(-5px) rotate(-45deg);
+
+}
+
+.open .nav_button_line.l02 {
+    background-color: transparent;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.0);
+}
+
+.nav_button_words {
+    color: #fff;
+    height: 50px;
+    pointer-events: none;
+    width: 100%;
+    left: 0;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    text-shadow: 4px 0 6px rgba(0, 0, 0, 0.6);
+}
+
+/* NAV部分
+-------------------------------------------------------- */
+#nav {
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: calc(-30vw - 5px);
+    align-items: center;
+    z-index: 99;
+    padding: 0 10vh 0 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: .6s;
+}
+
+#nav.open {
+    transform: translate3d(calc(-27vw), 0, 0);
+}
+
+.header_menu {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header_menu>li {
+    padding-bottom: 30px;
+    list-style-type: none;
+    text-align: center;
+    height: 10vh;
+}
+
+#nav a.line {
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#nav a.line::before {
+
+    background: #000;
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform-origin: right center;
+    transform: scaleX(0);
+    transition: transform .3s ease;
+}
+
+#nav a.line:hover::before,
+#nav a.line.is-active::before {
+    transform-origin: left center;
+    transform: scaleX(1);
+}
+
+
+/* HERO部分 
+---------------------------------------------------------*/
+#hero {
+    position: relative;
+    max-height: 862px;
+    overflow: hidden;
+}
+
+#hero::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(./images/background.png);
+    width: 1700px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+}
+
+/* .mainpng {
+    position: relative;
+    z-index: 7000;
+    width: 103%;
+    height: auto;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+} */
+.hero_view {
+    position: relative;
+}
+
+.mainpng {
+    width: 907px;
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transform: translateX(30%) translateY(-10%);
+}
+
+.title_withyou {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(140px) translateY(150px);
+    z-index: 9;
+    width: 100%;
+    max-width: 1035px;
+}
+
+.title_view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(369px) translateY(604px);
+    z-index: 11;
+    width: 100%;
+    max-width: 1239px;
+    height: 100px;
+}
+
+/* 
+.mainbgc {
+    display: block;
+    margin: 0;
+    background-image: url(./images/miku16th_concept_credit.png);
+    width: 1600px;
+    height: 100vh;
+    overflow: hidden;
+    top: -100px;
+    display: flex;
+    z-index: 1;
+}
+ .mainpng {
+    position: absolute;
+    z-index: 9001;
+    width: 123%;
+    height: auto;
+    overflow: hidden;
+    top: -543px;
+    left: -196px;
+    display: flex;
+    
+} /*
+
+.title_withyou,
+.title_view {
+    margin: 0;
+    display: block;
+    position: absolute;
+    z-index: 9000;
+}
+
+.title_withyou {
+    width: 100%;
+    top: 20%;
+    left: 87px;
+}
+
+.title_view {
+    width: 100%;
+    top: 613px;
+    left: 323px;
+}
+
+.title_viewmask {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 614px;
+    left: 426px;
+    z-index: 9001;
+} */
+.custom-shape-divider-top-1767001910 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+/* ABOUT MIKU部分
+---------------------------------------------------------*/
+#aboutmiku {
+    margin: 0;
+    padding: 96px;
+}
+
+#aboutmiku>div {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutmiku_title {
+    background-image: url("./images/WHAT IS HATSUNE MIKU _.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-size: contain;
+    /* 幅に合わせて縮尺 */
+    width: 100%;
+    height: 0;
+    /* 高さは padding-top で確保 */
+    padding-top: 6%;
+    /* SVG アスペクト比に合わせて調整（約15.586%） */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: clip;
+    z-index: 5;
+    position: relative;
+    animation: fadeInUp ease-out;
+    animation-duration: 1.5s;
+}
+
+.aboutmiku_title::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("./images/HATSUNE_MIKU.svg") no-repeat;
+    background-size: 22% auto;
+    position: absolute;
+    top: -1%;
+    left: 44.3%;
+    z-index: -1;
+    animation: fadeInUp ease-out;
+    animation-duration: 1.5s;
+}
+
+.aboutmiku_subtitle {
+    background-image: url("./images/初音ミクとは？.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 3.5%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 5;
+    position: relative;
+    animation: fadeInUp ease-out;
+    animation-duration: 1.5s;
+}
+
+.aboutmiku_subtitle::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("./images/初音ミク.svg") no-repeat;
+    background-size: 11.17% auto;
+    position: absolute;
+    top: -1%;
+    left: 39.9%;
+    z-index: -1;
+    animation: fadeInUp ease-out;
+    animation-duration: 1.5s;
+}
+
+div.aboutmiku_clm {
+    display: flex;
+    flex: 1;
+    animation: fadeInUp ease-out;
+    animation-duration: 1.5s;
+}
+
+.aboutmiku_clm_left {
+    flex: 1;
+    padding: 10px 150px 144px 120px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 1.9px;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.aboutmiku_clm_left_text>p {
+    z-index: 2;
+    max-width: 800px;
+    color: #fff;
+    padding: 2em;
+    margin: 0 auto 60px;
+
+}
+
+.shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+
+.aboutmiku_clm_left_text {
+    font-size: 24px;
+    position: relative;
+    z-index: 3;
+}
+
+.aboutmiku_clm_right {
+    width: 370px;
+    transform: translateY(-160px)translateX(-80px);
+    z-index: 2;
+}
+
+.aboutmiku_clm_right::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("./images/img_about_miku\ 1.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* tag部分
+-------------------------------------- */
+#tag {
+    background: #39C2B5;
+    transform: rotate(-36deg);
+    width: 400px;
+    height: 104px;
+    color: #fff;
+    font-size: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: italic;
+    left: 0;
+    top: 0;
+    letter-spacing: -5px;
+    z-index: 10;
+}
+
+#tag span {
+    white-space: nowrap;
+    display: inline-block;
+}
+
+/* BIG MIKU部分
+-------------------------------------- */
+.BIG_background {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+}
+
+.BIG_background>img {
+    position: absolute;
+    z-index: 10;
+    right: -1200px;
+    height: auto;
+    top: -290px;
+    width: 2990px;
+}
+
+/* Best Feature部分
+-------------------------------------- */
+#BF {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+    position: relative;
+    margin-top: 256px;
+    margin-bottom: 217px;
+    z-index: 11;
+}
+
+#BF>#tag {
+    width: 380px;
+    position: absolute;
+    top: -155px;
+    left: -6px;
+}
+
+.BF_content {
+    display: flex;
+    width: 999px;
+    height: 512px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 95px;
+    position: relative;
+    color: #fff;
+}
+
+.BF_content_item1,
+.BF_content_item2,
+.BF_content_item3 {
+    width: 268px;
+    height: 512px;
+    background-size: contain;
+
+}
+
+.BF_content_item1 {
+    background: url(./images/index/Group\ 9.svg);
+    animation: fadeInUp;
+    animation-duration: 1s;
+}
+
+.BF_content_item2 {
+    background: url(./images/index/Group\ 10.svg);
+    animation: fadeInUp;
+    animation-duration: 1.3s;
+}
+
+.BF_content_item3 {
+    background: url(./images/index/Group\ 11.svg);
+    animation: fadeInUp;
+    animation-duration: 1.6s;
+}
+
+.VT {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    writing-mode: vertical-rl;
+    margin: 40px auto;
+    font-size: 100px;
+}
+
+.HZ {
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500px;
+    font-style: italic;
+    font-size: 65px;
+}
+
+/* Event
+--------------------------------- */
+#Event {
+    display: flex;
+    justify-content: center;
+    padding: 150px 10%;
+    position: relative;
+    /* background: linear-gradient(to left top, #ECE0B4 0, #DC9194 100%); */
+    z-index: 12;
+}
+
+#Event>#tag {
+    width: 320px;
+    position: absolute;
+    top: 62px;
+}
+
+.Event_content {
+    display: flex;
+    max-width: 1200px;
+}
+
+.Event_content_item {
+    display: flex;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    box-shadow: -14px 8px 60px 0px rgba(0, 0, 0, 0.25) inset, 9px 6px 22px 0px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    width: 100%;
+    border-radius: 20px;
+    flex: 1;
+    transition: .6s;
+}
+
+.Event_content_photo {
+    padding: 47px 45px 10px 48px;
+}
+
+.Event_content_photo>img {
+    width: 224px;
+}
+
+.Event_content_text {
+    padding: 47px 43px 10px 0;
+}
+
+.Event_Name {
+    font-size: 2.45rem;
+}
+
+.Event_content_text>ul {
+    line-height: 30px;
+    margin: 0;
+}
+
+.Event_content_text>ul>li {
+    margin-left: -40px;
+}
+
+.Event_text {
+    margin-top: 16px;
+    margin-bottom: 34px;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.more a {
+    color: #00A2B7;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    transition-property: all;
+    transition-duration: .6s;
+    flex: 1;
+}
+
+.more a:hover {
+    color: #f87cb2;
+}
+
+.more p {
+    display: inline;
+    margin: 0;
+    /* imgと被るのを防ぐ */
+    position: relative;
+    left: -5%;
+
+}
+
+.more {
+    display: flex;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+
+.more p,
+.more img {
+    pointer-events: auto;
+}
+
+/* .more::after{
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background: url(./images/common/anker_link.svg) no-repeat;
+} */
+.Event_content_text img {
+    position: absolute;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 22px;
+    height: 22px;
+
+}
+
+/* 12/18 Today kobori point
+ ☆z-index☆ 　yeah~~~~ */
+
+#Event>.Event_content {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.Event_content_item {
+    display: flex;
+}
+
+.Event_content_item.l01,
+.Event_content_item.l02,
+.Event_content_item.l03,
+.Event_content_item.l04 {
+    animation: fadeInUp ease-out;
+    animation-duration: 1s;
+}
+
+.Event_content_item.l01 .more {
+
+    margin-top: -6%;
+    margin-bottom: 0;
+    margin-right: 18px;
+}
+
+.Event_content_item.l02 .more {
+    margin-top: 1%;
+    margin-bottom: 0;
+    margin-right: 18px;
+}
+
+.Event_content_item.l03 .more {
+    margin-top: -50px;
+    margin-bottom: 0;
+    margin-right: 18px;
+}
+
+.Event_content_item.l04 .more {
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-right: 18px;
+}
+
+/* LIVE部分
+------------------------------------ */
+#LIVE {
+    display: flex;
+    justify-content: center;
+    padding: 150px 10%;
+    position: relative;
+    /* background: linear-gradient(to left top, #ECE0B4 0, #DC9194 100%); */
+    z-index: 12;
+}
+
+#LIVE>#tag {
+    width: 300px;
+    position: absolute;
+    top: 62px;
+}
+
+.LIVE_content {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    gap: 28px;
+}
+
+.LIVE_content_item01,
+.LIVE_content_item02 {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    max-width: 1200px;
+    border-radius: 15px;
+}
+
+.content_img>img {
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.content_text {
+    padding-left: 20px;
+}
+
+/* typography部分
+--------------------------------------- */
+#typography {
+    position: relative;
+}
+
+.typography_EN {
+    --width: 147.8vw;
+    /* 1文の表示の幅 */
+    width: var(--width);
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    font-family: "neutro";
+    font-size: 12.5rem;
+    color: #39C2B5;
+    margin: 0 0 150px 0;
+}
+
+.textInner {
+    display: inline-block;
+    text-shadow: var(--width) 0 0 currentColor;
+    animation-name: scrollingText;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    font-family: "neutro";
+
+}
+
+@keyframes scrollingText {
+    0% {
+        translate: 0 0;
+    }
+
+    100% {
+        translate: calc(var(--width) * -1) 0;
+    }
+}
+
+.typography_EN::before {
+    content: "初音ミク";
+    font-family: "yosugara";
+    color: #000;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    font-size: 11.3rem;
+    transform: rotate(354deg) translateY(-55px);
+}
+
+/* footer部分
+----------------------------------------------- */
+#footer {
+    position: relative;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+}
+
+#footer>div {
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+
+.footer_copy {
+    font-size: 0.7rem;
+}
+
+/* レスポンシブ対応
+----------------------------------------------- */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    #nav_position {
+        right: 20px;
+    }
+
+    #nav {
+        width: 100vw;
+        right: -100vw;
+        padding: 0 5vh 0 0;
+    }
+
+    #nav.open {
+        transform: translate3d(-100vw, 0, 0);
+    }
+
+    .hero .main_png img {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #aboutmiku {
+        padding: 50px 20px;
+    }
+
+    .aboutmiku_clm {
+        flex-direction: column;
+    }
+
+    .aboutmiku_clm_left {
+        padding: 10px 20px 50px 20px;
+        font-size: 18px;
+    }
+
+    .aboutmiku_clm_right {
+        width: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .BIG_background {
+        height: 200vh;
+    }
+
+    .BIG_background > img {
+        right: -800px;
+        width: 2000px;
+        top: -200px;
+    }
+
+    #BF {
+        padding: 0 5%;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+
+    #BF > #tag {
+        width: 300px;
+        top: -100px;
+    }
+
+    .BF_content {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 50px;
+    }
+
+    .BF_content_item1,
+    .BF_content_item2,
+    .BF_content_item3 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .VT {
+        font-size: 60px;
+    }
+
+    .HZ {
+        font-size: 20px;
+    }
+
+    #Event > #tag {
+        width: 300px;
+    }
+
+    .Event_content {
+        gap: 20px;
+    }
+
+    .Event_content_item {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .Event_content_photo {
+        padding: 20px;
+    }
+
+    .Event_content_photo > img {
+        width: 150px;
+    }
+
+    .Event_content_text {
+        padding: 20px 0;
+    }
+
+    .Event_Name {
+        font-size: 2rem;
+    }
+
+    .Event_text {
+        font-size: 1.5rem;
+    }
+
+    .more a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    #nav_position {
+        right: 10px;
+    }
+
+    .hero .main_png img {
+        max-width: 400px;
+    }
+
+    .aboutmiku_title {
+        padding-top: 10%;
+    }
+
+    .aboutmiku_subtitle {
+        padding-top: 5%;
+    }
+
+    .aboutmiku_clm_left {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .BIG_background {
+        height: 150vh;
+    }
+
+    .BIG_background > img {
+        right: -600px;
+        width: 1500px;
+        top: -150px;
+    }
+
+    #BF {
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .BF_content {
+        gap: 30px;
+    }
+
+    .BF_content_item1,
+    .BF_content_item2,
+    .BF_content_item3 {
+        width: 150px;
+        height: 250px;
+    }
+
+    .VT {
+        font-size: 40px;
+    }
+
+    .HZ {
+        font-size: 16px;
+    }
+
+    .Event_content_photo > img {
+        width: 120px;
+    }
+
+    .Event_Name {
+        font-size: 1.5rem;
+    }
+
+    .Event_text {
+        font-size: 1.2rem;
+    }
+
+    .more a {
+        font-size: 1rem;
+    }
+
+    #footer {
+        padding: 10px 0;
+    }
+
+    .footer_copy {
+        font-size: 0.6rem;
+    }
+}

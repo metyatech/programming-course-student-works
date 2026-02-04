@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Portfolio - Photography Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2v20M2 12h20M6 6l12 12M6 18L18 6"/>
+                    <circle cx="12" cy="12" r="2"/>
+                    <circle cx="12" cy="2" r="1.5"/>
+                    <circle cx="12" cy="22" r="1.5"/>
+                    <circle cx="2" cy="12" r="1.5"/>
+                    <circle cx="22" cy="12" r="1.5"/>
+                    <circle cx="6" cy="6" r="1.5"/>
+                    <circle cx="18" cy="18" r="1.5"/>
+                    <circle cx="6" cy="18" r="1.5"/>
+                    <circle cx="18" cy="6" r="1.5"/>
+                </svg>
+                Travel
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-bg"></div>
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1>Travel Moments</h1>
+            <p>tsukada mahiro</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+            <button class="filter-btn" data-filter="decorations">theme park</button>
+            <button class="filter-btn" data-filter="food">Food</button>
+            <button class="filter-btn" data-filter="family">other</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-container" id="gallery">
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Landscapes -->
+            <div class="gallery-item tall" data-category="landscapes">
+                <img src="images/205524_0.jpg" alt="photo">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">TOKYO</h3>
+                    <p class="gallery-category">神宮前</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decorations">
+                <img src="images/205536_0.jpg" alt="theme park">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">OSAKA</h3>
+                    <p class="gallery-category">USJ</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <img src="images/20260127_152203.jpg" alt="Food">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">RAMEN</h3>
+                    <p class="gallery-category"></p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscapes">
+                <img src="images/205528_0.jpg" alt="spot">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">KANAGAWA</h3>
+                    <p class="gallery-category">江ノ島</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="family">
+                <img src="images/205527_0.jpg" alt="other">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">SHIZUOKA</h3>
+                    <p class="gallery-category">HAMAMATSU(town)</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decorations">
+                <img src="images/205531_0.jpg" alt="theme park">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">CHIBA</h3>
+                    <p class="gallery-category">TOKYO DISNY LAND</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <img src="images/207562_0.jpg" alt="Food">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">SUSHI</h3>
+                    <p class="gallery-category"></p>
+                </div>
+            </div>
+
+            <div class="gallery-item tall" data-category="landscapes">
+                <img src="images/205537_0.jpg" alt="spot">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">HIROSHIMA</h3>
+                    <p class="gallery-category">MIYAJIMA</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="family">
+                <img src="images/207564.jpg" alt="other">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">KANAGAWA</h3>
+                    <p class="gallery-category">YOKOHAMA(CHINA TOWN)</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="decorations">
+                <img src="images/205530_0.jpg" alt="theme park">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">SAITAMA</h3>
+                    <p class="gallery-category">KADOKAWA CULTURE MUSEUM</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscapes">
+                <img src="images/205526_0.jpg" alt="spot">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">TOKYO</h3>
+                    <p class="gallery-category">東京スカイツリー</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="food">
+                <img src="images/207563_0.jpg" alt="Food">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">STAKE</h3>
+                    <p class="gallery-category"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="closeLightbox">×</button>
+        <button class="lightbox-nav lightbox-prev" id="prevImage">‹</button>
+        <button class="lightbox-nav lightbox-next" id="nextImage">›</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxCategory"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>今回は自分が行った場所、食べたものの中から特に良かったものをただ載せる簡単な紹介ページを作りました。</p>
+                <p>今まで色んなところへ行き、色んなものを食べました。こうして振り返ると言った場所は意外と少なかったと思います。その分その場所の穴場を見つけたり出来たりとても楽しかったです。</p>
+                <p>これからも自分がふと行きたいと思った場所を行ったり食べたい物を食べる自由で軽い人生を送りたいと思います笑</p>
+                <p>それと画像の大きさとかが調整できなかったので少し見づらいかもしれません...</p>
+            </div>
+            <div>
+                <div class="about-image">
+                    <img src="images/205533_0.jpg" alt="">
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Photos Captured</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Get in Touch</h2>
+        <p>Let's work together to capture your travel moments</p>
+        
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <a href="mailto:hello@winterportfolio.com">mahirotsukada0504@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <a href="tel:+15551234567">080-6247-9290</a>
+            </div>
+            <div class="contact-item">
+                <span>📍</span>
+                <a href="https://www.google.com/maps/search/?api=1&query=Colorado+USA" target="_blank">Saitama, JAPAN</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Travel Moments • Designed by <a rel="nofollow" href="https://www.tooplate.com" target="_blank">Tsukada</a></p>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>

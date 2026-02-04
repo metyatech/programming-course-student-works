@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #49586A;
+  box-sizing: border-box;
+}
+
+/* header
+---------------------- */
+header {
+  height: 100vh;
+  min-height: 920px;
+  background: url(img/back_flower.png) no-repeat center;
+  position: relative;
+}
+
+h1 {
+  font-size: clamp(64px, 10vw, 150px);
+  text-align: center;
+
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+}
+
+
+.header-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+  height: 100%;
+
+  position: relative;
+}
+
+
+.hed-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+}
+
+.hed-item ul li {
+  margin-bottom: 8px;
+}
+
+.hed-item ul {
+  position: absolute;
+  top: 412px;
+  left: 46px;
+
+  list-style: none;
+}
+
+.hed-item li {
+  font-size: 22px;
+  border-bottom: 1px solid #49586A;
+}
+
+.hed-item li:hover {
+  color: rgb(1, 163, 17);
+}
+
+
+
+.main_visual {
+  position: absolute;
+  top: 200px;
+  max-width: 48%;
+  max-height: 720px;
+}
+
+
+.hero h2 {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: clamp(32px, 5vw, 64px);
+  white-space: nowrap;
+  text-align: center;
+
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 400;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_visual:hover{
+  transform: rotate(2deg);
+  transition: all 0.5s;
+}
+
+/* main
+---------------------- */
+
+
+/* slide
+---------------------- */
+
+.slide {
+  height: 920px;
+  background-color: #ECF3F9;
+
+  position: relative;
+}
+
+.swiper {
+  height: 562px;
+
+  position: absolute;
+  top: 179px;
+  left: 0;
+  right: 0;
+}
+
+.swiper-slide {
+  background: url(img/Garden\ core.png) no-repeat center;
+}
+
+.race {
+  position: absolute;
+  top: 0;
+}
+
+.race2 {
+  position: absolute;
+  bottom: -6px;
+}
+
+/* other
+---------------------- */
+
+
+.other {
+  height: 920px;
+  background-color: beige;
+  background: url(img/back2.png) no-repeat center;
+
+  position: relative;
+}
+
+.content {
+  display: flex;
+}
+
+.snap {
+  height: 635px;
+
+  position: absolute;
+  top: 141px;
+  left: 247px;
+}
+
+.snap img {
+  height: 635px;
+  width: auto;
+  display: block;
+}
+
+.ranking {
+  height: 635px;
+
+  position: absolute;
+  top: 141px;
+  right: 247px;
+
+}
+
+.ranking img {
+  height: 635px;
+  width: auto;
+  display: block;
+}
+
+
+.snap img:hover {
+  filter: brightness(60%);
+  transition: 0.5s;
+}
+
+.ranking img:hover {
+  filter: brightness(60%);
+  transition: 0.5s;
+}
+
+/* footer
+---------------------- */
+
+footer {
+  font-family: "Ibarra Real Nova", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav p:hover {
+  color: rgb(1, 163, 17);
+}
+
+.nav1 {
+  line-height: 4rem;
+  margin: 0 242px 0 140px;
+}
+
+.nav2 {
+  line-height: 4rem;
+  margin: 0 242px 0 0;
+}
+
+.sns {
+  text-align: right;
+  margin: 0 140px 30px 0;
+  gap: 20px;
+}
+
+.end {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 140px 100px;
+
+  align-items: flex-end;
+}
+
+.olive {
+  font-size: 12px;
+}
+
+.name {
+  font-size: 40px;
+}

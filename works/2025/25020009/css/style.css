@@ -1,0 +1,240 @@
+@charset "UTF-8";
+html{
+    font-size: 100%;
+    background: #A5B0BF;
+    margin-top: 20px;
+}
+
+body{
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1B1555;
+}
+
+h1{
+    font-size: 96px;
+}
+
+p{
+    font-size: 65px;
+}
+
+small{
+    font-size: 32px;
+}
+
+header {
+  display: flex;
+  background-color: rgba(21, 24, 26, .4);
+  width: 100%;
+  height: 120px;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding: 0 50px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 48px;
+}
+
+header a:hover{
+    color: #FDFA05;
+}
+
+.top{
+    margin-bottom: 200px;
+}
+
+#shoppi{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+#thumb{
+    width: 100%;
+}
+
+.about{
+    background-image: url(../images/about.png);
+    text-align: center;
+    margin: 70px 270px;
+    margin-bottom: 200px;
+    padding: 40px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.account{
+    width: 430px;
+    height: 150px;
+    background-color: rgba(254, 255, 4, .2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.account img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.account p{
+    font-size: 32px;
+}
+
+.member{
+    text-align: center;
+    margin: 0 70px;
+    margin-bottom: 200px;
+}
+
+.character{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.emile, .tonton, .shaoron, .utu, .zom, .shoppi{
+    margin: 50px;
+}
+
+.emile p{
+    color: #fff;
+    -webkit-text-stroke-width:4px;
+  -webkit-text-stroke-color:#6B4A27;
+}
+.emile img{
+    width: 400px;
+    height: auto;
+    border: solid 5px #6B4A27;
+}
+
+.tonton p{
+    color: #fff;
+    -webkit-text-stroke-width:4px;
+  -webkit-text-stroke-color:#A51B22;
+}
+.tonton img{
+    width: 400px;
+    height: auto;
+    border: solid 5px #A51B22;
+}
+
+.shaoron p{
+    color: #fff;
+    -webkit-text-stroke-width:4px;
+  -webkit-text-stroke-color:#D9C100;
+}
+.shaoron img{
+    width: 400px;
+    height: auto;
+    border: solid 5px #D9C100;
+}
+
+.utu p{
+    color: #fff;
+    -webkit-text-stroke-width:4px;
+  -webkit-text-stroke-color:#1F296B;
+}
+.utu img{
+    width: 400px;
+    height: auto;
+    border: solid 5px #1F296B;
+}
+
+.zom p{
+    color: #fff;
+    -webkit-text-stroke-width:4px;
+  -webkit-text-stroke-color:#264931;
+}
+.zom img{
+    width: 400px;
+    height: auto;
+    border: solid 5px #264931;
+}
+
+.shoppi p{
+    color: #fff;
+    -webkit-text-stroke-width:4px;
+  -webkit-text-stroke-color:#6A5F87;
+}
+.shoppi img{
+    width: 400px;
+    height: auto;
+    border: solid 5px #6A5F87;
+}
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  width: 200px;
+  height: 70px;
+  background-color: #A5B0BF;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.box1 p, .box2 p, .box3 p, .box4 p, .box5 p, .box6 p {
+    font-size: 30px;
+    margin: 15px;
+    -webkit-text-stroke-width: 1px;
+    color: #1B1555;
+}
+
+.box1 img, .box2 img, .box3 img, .box4 img, .box5 img, .box6 img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.box1.big, .box2.big, .box3.big, .box4.big, .box5.big, .box6.big {
+  width: 400px;
+  height: 400px;
+  background-color: #A5B0BF;
+}
+
+.video{
+    text-align: center;
+}
+
+.slider{
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+.Youtube {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9のアスペクト比 */
+    height: 0;
+}
+
+.Youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    text-align: center;
+    background: url(../images/footer.png) no-repeat center / 100%;
+    padding: 100px;
+}
+

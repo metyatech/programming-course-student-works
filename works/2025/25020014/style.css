@@ -1,0 +1,184 @@
+/*全体設定*/
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    background-color: #0b0b0b;
+    background-image: url(image/狩人の夢.jpg);
+    color: #d0d0d0;
+}
+
+
+/*YOU DIED 画面*/
+#death-screen {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#death-screen h1 {
+    color: darkred;
+    font-size: 5rem;
+    letter-spacing: 0.2em;
+    opacity: 0;
+    animation: fadeInOut 3s ease forwards;
+}
+
+/*本編 最初非表示*/
+#content {
+    display: none;
+    padding: 40px;
+}
+
+/*ヘッダー*/
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.subtitle {
+    color: #ffffff;
+}
+
+/*ナビゲーション*/
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+nav a:hover {
+    color: darkred;
+}
+
+/*セクション*/
+section {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+section h2 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    color: #b30000;
+}
+
+/*フッター*/
+footer {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 60px;
+}
+
+/*アニメーション*/
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/*メニュー*/
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.menu-card {
+    width: 220px;
+    height: 120px;
+    background: linear-gradient(145deg, #111, #050505);
+    border: 1px solid #222;
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 0 20px rgba(120, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+    color: darkred;
+    box-shadow: 0 0 35px rgba(180, 0, 0, 0.6);
+    transform: translateY(-6px);
+}
+
+/*戻る*/
+
+.back {
+    display: inline-block;
+    margin: 20px;
+    color: #777;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: darkred;
+}
+
+.back-weapon {
+    display: inline-block;
+    margin: 20px;
+    color: #777;
+    text-decoration: none;
+}
+
+.back-weapon:hover {
+    color: darkred;
+}
+
+
+
+
+/*背景画像*/
+
+.weapon-menu {
+    background: #050505 !important;
+}
+
+.weaponguns-menu {
+    background: #050505 !important;
+}
+
+.world-menu {
+    background: #050505 !important;
+}
+
+.character-menu {
+    background: #050505 !important;
+}
+
+
+/*画像大きさ*/
+
+.card-character img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+

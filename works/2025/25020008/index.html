@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プログラミング演習期末試験</title>
+<!-- css読み込み -->
+    <link rel="stylesheet" href="css/index.css">
+<!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<!-- ヘッダー -->
+<header>
+    <div class="font-contena">
+    <h1>WEB SITE</h1>
+    </div >
+<!-- メニュー -->
+     <div class="menu-top">   
+        <h2 class="menu-item">TOP<i class="fa-solid fa-angle-right"></i></h2>
+        <ul class="menu-book">
+            <li class="menu-item"><a href="#site-content">サイト説明<i class="fa-solid fa-angle-right"></i></a></li>
+            <li class="menu-item"><a href="#photogalley">綺麗な写真<i class="fa-solid fa-angle-right"></i></a></li>
+            <li class="menu-item"><a href="#contena">画像<i class="fa-solid fa-angle-right"></i></a></li>
+            <li class="menu-item"><a href="#foter">情報<i class="fa-solid fa-angle-right"></i></a></li>
+        </ul>
+    </div>
+</header>
+
+
+<main>
+    <!-- メイン/サイトの説明文章 -->
+        <section id="site-content">
+    <p>このサイトは私が愛用するunsplashという写真・画像サイトの綺麗だと思った写真や、可愛らしいと感じた写真を詰めているサイトです。</p>
+        </section>
+
+    <!--  スクロールされるフォトギャラリー -->
+        <section class="gallery">
+    <h2 id="photogalley">Photo gallery</h2>
+
+    <div class="scroll">
+    <ul class="jouhou">
+        <li class="listitem">
+            <img  class="photo"  src="img/hamabe.png" alt="浜辺の画像">
+        </li>
+        <li class="listitem">          
+            <img  class="photo"  src="img/baburu.png" alt="泡の画像">
+        </li>
+        <li class="listitem">
+            <img  class="photo"  src="img/nithart.png" alt="ハートの画像">
+        </li>
+        <li class="listitem">
+            <img  class="photo"  src="img/huriru.png" alt="フリルの画像">
+        </li>
+        <li class="listitem">
+            <img  class="photo"  src="img/garascop.png" alt="コップの画像">
+        </li>
+        <li class="listitem">
+            <img  class="photo"  src="img/nuri.avif" alt="水色の画像">
+        </li>
+<!-- 同じ画像を用意する -->
+        <li class="listitem">
+            <img  class="photo"  src="img/hamabe.png" alt="浜辺の画像2">
+        </li>
+        <li class="listitem">          
+            <img  class="photo"  src="img/baburu.png" alt="泡の画像2">
+        </li>
+        <li class="listitem">
+            <img  class="photo"  src="img/nithart.png" alt="ハートの画像2">
+        </li>
+        <li class="listitem">
+            <img  class="photo"  src="img/huriru.png" alt="フリルの画像2">
+        </li>
+        <li class="listitem">
+            <img  class="photo"  src="img/garascop.png" alt="コップの画像2">
+        </li>
+        <li class="listitem">
+            <img  class="photo"  src="img/nuri.avif" alt="水色の画像2">
+        </li>
+    </ul>
+    </div>
+<!-- ボタン -->
+    <h3 class="botan">詳しく見る<i class="fa-solid fa-angle-right"></i></h3>
+    </section>
+
+<!-- 　 時間経過で変わる画像 -->
+        <section class="image">
+            <h3>Photo select</h3>
+    <div id="contena"> 
+            <img class="art and1" src="img/kohakuto.avif" alt="">
+            <img class="art and2" src="img/keki.avif" alt="">
+            
+    </div>   
+        </section>
+
+<!-- 　 プリンおばけ -->
+        <section class="anime">
+            <img class="obake" src="img/obake.png" alt="">
+        </section>
+</main>
+<!-- フッター -->
+    <footer id="foter">
+        <small>25020008　大野</small>
+    </footer>
+    <script src="https://kit.fontawesome.com/b3e11c7785.js" crossorigin="anonymous"></script>
+</body>
+</html>

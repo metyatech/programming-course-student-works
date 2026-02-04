@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+}
+.taitotu{
+    font-family: "Zen Maru Gothic", sans-serif;
+    color: #67966B;
+    font-size: 3rem;
+    text-align: left;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    font-size: 150px;
+    margin: 0;
+    left: 5%;
+    letter-spacing: 35px;
+    animation: taitotu 50s linear 0s infinite;
+}
+
+@keyframes taitotu{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-100%);}
+}
+img{
+    height: 450px;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+}
+.top{
+    position: relative;
+    top: 50px;
+}
+.nabi{
+    position: relative;
+}
+.nsbi-li{
+    padding: 20px;
+    font-size: 25px;
+}
+
+li{
+    list-style: none;
+    font-family:  "Zen Maru Gothic", sans-serif;
+}
+.nsbi-ul{
+    position: absolute;
+    top: 100px;
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+ul{
+ display: flex;
+    gap: 20px;
+}
+ .div-img-button{
+    position: absolute;
+    /* background-color: #B27979; */
+    top: 20px;
+    left: 50px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    box-shadow: 5px  5px  5px black;
+    background-color: white;
+    font-weight: bold;
+}
+.div-span-img{
+    position: relative;
+
+}
+a{
+    color: #B27979;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+}
+.nsbi-a.open{
+    position: absolute;
+    top: 0;
+}
+.nsbi-a{
+    position: absolute;
+    top: -1000px;
+    transition: 0.8s;
+}
+header{
+    position: relative;
+}
+
+
+h3,p{
+    width: 140px;
+}
+.mein-h2{
+    position: absolute;
+    font-size: 60px;
+    color: #B27979;
+    border-bottom: 5px black solid;
+    right: 0;
+    left: 0%;
+    top: 450px;
+    padding:0px 40px;
+}
+.mein-h3{
+    position: absolute;
+    right: 0;
+    color: #67966B;
+    font-size: 40px;
+    width: 300px;
+    top: 550px;
+}
+
+.mein-ul{
+    position: absolute; 
+    top: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+#menu{
+    left: 50px;
+}
+#money{
+    right: 240px;
+}
+
+.mein-li{
+    font-weight: bold; 
+    font-size: 20px;
+    color: #654444;
+}

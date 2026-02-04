@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー全体のレイアウト */
+.site-header {
+  display: flex;
+  justify-content: space-between; /* ロゴとメニューを両端に離す */
+  align-items: center;            /* 上下中央に揃える */
+  padding: 10px 40px;
+  background-color: #ffffff;
+}
+
+/* ロゴのサイズ調整 */
+.logo img {
+  height: 50px; /* 画像の大きさに合わせて調整してください */
+}
+
+/* メニューの並び（横に並べる） */
+.nav-menu ul {
+  display: flex;
+  list-style: none; /* 点を消す */
+  gap: 20px;        /* メニュー同士の間隔 */
+  margin: 0;
+  padding: 0;
+}
+
+main {
+    background-image: url(image/10006a636727f4ac204cc635fd678b16.jpg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+
+/* メニュー内のリンク（ここが縦並びのポイント！） */
+.nav-menu a {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; /* 要素を縦に並べる */
+  align-items: center;    /* 中央に寄せる */
+  text-decoration: none;  /* 下線を消す */
+  color: #ff8cb4;         /* ちいかわ風のピンク色 */
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* アイコン（画像やフォント）のサイズ */
+.nav-menu i {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-top: 5px;        /* 文字との隙間 */
+  background-color: #ff8cb4; 
+  border-radius: 4px;
+}
+
+header {
+  border-bottom: solid black 1px;
+  background-color: #f9c1cfd3 ;
+  margin-top: 0;
+  padding: 20px 0;
+}
+
+header h1 {
+   color: rgb(51, 51, 51);
+   font-size: 100px;
+   text-align: center;
+   margin-top: 200px
+}
+
+header p {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 100px;
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+main h2{
+    color: rgb(51, 51, 51);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 300px
+}
+
+main h3{
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    text-align: center;
+}
+
+main p {
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    text-align: center;
+    margin-top: -25px;
+}
+
+.charactertati {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.charactertati2 {
+    display: flex;
+    justify-content: center;
+    gap: 280px;
+    margin-bottom: 20px;
+}
+
+.section character h3 {
+    color: rgb(51, 51, 51);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 300px
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ciikawa {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.animetati {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.photo-card {
+    width: calc((100% - 40px) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link-img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.information-center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.link-img2 {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+}
+
+.site-footer {
+border-top: solid black 1px;
+  display: flex;
+  align-items: center;            /* 上下中央に揃える */
+  padding: 10px 40px;
+  background-color: #ffffff;
+}
+
+.copyright {
+    display: flex;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;
+}
+
+/*　動き　*/
+
+.link-img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.link-img2:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
