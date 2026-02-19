@@ -1,0 +1,261 @@
+/* =========================================
+   Soccer Theme Colors & Fonts
+   ========================================= */
+:root {
+    --pitch-black: #111111;
+    --pitch-green: #ccff00;
+    --line-white: rgba(255, 255, 255, 0.15);
+    --text-white: #ffffff;
+    --card-bg: #1a1a1a;
+    
+    --font-head: 'Teko', sans-serif;
+    --font-body: 'Roboto Condensed', sans-serif;
+    --font-jp: 'Noto Sans JP', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: none; }
+
+body {
+    background-color: var(--pitch-black);
+    color: var(--text-white);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+a, button { cursor: none; }
+
+/* =========================================
+   Background (Pitch Lines)
+   ========================================= */
+.bg-line {
+    position: fixed;
+    border: 2px solid var(--line-white);
+    z-index: -1;
+    pointer-events: none;
+}
+.center-circle {
+    width: 600px; height: 600px; border-radius: 50%;
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+.side-line {
+    width: 90%; height: 90%; top: 5%; left: 5%;
+    border-left: none; border-right: none;
+}
+
+/* =========================================
+   Custom Cursor (Ball)
+   ========================================= */
+#cursor-ball {
+    position: fixed;
+    width: 20px; height: 20px;
+    background-color: var(--text-white);
+    border: 2px solid var(--pitch-black);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, background-color 0.2s;
+    background-image: radial-gradient(circle at 30% 30%, #fff, #ccc);
+}
+body.hovering #cursor-ball {
+    width: 50px; height: 50px;
+    background-color: var(--pitch-green);
+    border-color: var(--pitch-green);
+    opacity: 0.8;
+    mix-blend-mode: difference;
+}
+
+/* =========================================
+   Loading (Kick Off)
+   ========================================= */
+#loading {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: var(--pitch-green);
+    z-index: 10000;
+    display: flex; justify-content: center; align-items: center;
+    transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+}
+#loading.loaded { transform: translateY(-100%); }
+
+.loading-text {
+    font-family: var(--font-head);
+    font-size: 5rem; color: var(--pitch-black); font-weight: 600;
+    letter-spacing: 0.1em; font-style: italic;
+}
+
+/* =========================================
+   Header
+   ========================================= */
+header {
+    padding: 30px 50px;
+    display: flex; justify-content: space-between; align-items: center;
+    position: fixed; width: 100%; top: 0; z-index: 100;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+.logo {
+    font-family: var(--font-head); font-size: 2.5rem; font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.num { color: var(--pitch-green); margin-left: 5px; }
+nav ul { display: flex; gap: 40px; }
+.nav-link {
+    font-family: var(--font-head); font-size: 1.5rem;
+    color: var(--text-white); text-transform: uppercase;
+    position: relative;
+}
+/* 【修正1】skewXの書き方を修正 */
+.nav-link::after {
+    content: ''; position: absolute; bottom: 0; left: 0;
+    width: 0; height: 3px; background: var(--pitch-green);
+    transition: 0.3s; transform: skewX(-20deg); 
+}
+.nav-link:hover { color: var(--pitch-green); }
+.nav-link:hover::after { width: 100%; }
+
+/* =========================================
+   Hero Section
+   ========================================= */
+.hero {
+    height: 100vh;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 10%;
+}
+.position {
+    color: var(--pitch-green); font-weight: 700; letter-spacing: 0.2em;
+    margin-bottom: 10px; font-family: var(--font-body);
+}
+.name {
+    font-family: var(--font-head); font-size: 8rem; line-height: 0.9;
+    font-style: italic; text-transform: uppercase; margin-bottom: 20px;
+}
+.slogan {
+    font-size: 1.2rem; color: #888; letter-spacing: 0.1em;
+    border-left: 3px solid var(--pitch-green); padding-left: 20px;
+}
+.hex-image {
+    width: 400px; height: 450px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background: #333; position: relative;
+}
+.hex-image img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: grayscale(50%) contrast(1.2); transition: 0.5s;
+}
+.hex-image:hover img { filter: grayscale(0%); transform: scale(1.1); }
+
+/* =========================================
+   Sections Common
+   ========================================= */
+.section { padding: 120px 10%; }
+.section-title {
+    font-family: var(--font-head); font-size: 4rem; margin-bottom: 60px;
+    color: transparent; -webkit-text-stroke: 1px var(--text-white);
+    opacity: 0.3; text-transform: uppercase; font-style: italic;
+}
+
+/* Profile Card */
+.profile-card {
+    background: var(--card-bg); border-left: 5px solid var(--pitch-green);
+    padding: 0; max-width: 600px;
+}
+.card-header {
+    background: #222; padding: 15px 30px;
+    display: flex; justify-content: space-between;
+    font-family: var(--font-head); font-size: 1.5rem; color: #888;
+}
+.card-body { padding: 30px; }
+.data-row {
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #333; padding: 15px 0;
+    font-family: var(--font-jp);
+}
+.label { color: var(--pitch-green); font-weight: 700; }
+.value { font-weight: 500; }
+
+/* Stats (Skill Bars) */
+.stats-grid { display: grid; gap: 30px; max-width: 800px; }
+.stat-info {
+    display: flex; justify-content: space-between; margin-bottom: 5px;
+    font-family: var(--font-head); font-size: 1.5rem;
+}
+.stat-val { color: var(--pitch-green); }
+.stat-bar {
+    width: 100%; height: 10px; background: #333;
+    transform: skewX(-20deg);
+}
+.stat-fill {
+    height: 100%; background: var(--pitch-green);
+    /* 【修正2】初期値を0にして、animationで制御する方式に変更 */
+    width: 0; 
+    transition: width 1.5s ease-out;
+}
+/* JSでクラスがついたときに、HTMLのインラインスタイル(width)が効くようにする */
+/* （CSSのwidth:0よりもインラインスタイルが優先されるため、これでOK） */
+
+
+/* Highlights */
+.works-container {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.work-card {
+    display: block; position: relative;
+    border: 1px solid #333; transition: 0.3s;
+}
+.work-img { height: 200px; overflow: hidden; position: relative; }
+.work-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+.work-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(204, 255, 0, 0.9); color: #000;
+    display: flex; justify-content: center; align-items: center;
+    font-family: var(--font-head); font-size: 2rem;
+    opacity: 0; transition: 0.3s;
+}
+.work-card:hover .work-overlay { opacity: 1; }
+.work-card:hover img { transform: scale(1.1); }
+.work-desc { padding: 20px; background: var(--card-bg); }
+.work-desc h3 {
+    font-family: var(--font-head); font-size: 1.8rem; margin-bottom: 5px;
+    color: var(--text-white);
+}
+.work-desc p { color: #888; font-size: 0.9rem; }
+
+/* Scout (Contact) */
+.contact-box {
+    text-align: center; border: 2px solid var(--pitch-green);
+    padding: 60px; max-width: 600px; margin: 0 auto;
+}
+.btn-scout {
+    display: inline-block; margin-top: 30px;
+    padding: 15px 50px; background: var(--pitch-green);
+    color: var(--pitch-black); font-family: var(--font-head);
+    font-size: 2rem; font-weight: 700;
+    transition: 0.3s; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+.btn-scout:hover { background: var(--text-white); transform: scale(1.05); }
+
+/* Footer */
+footer {
+    padding: 50px; text-align: center; border-top: 1px solid #333;
+    font-family: var(--font-head);
+}
+.footer-logo { font-size: 3rem; color: #333; margin-bottom: 10px; }
+
+/* Animations */
+.fade-in-left { opacity: 0; transform: translateX(-50px); animation: slideIn 0.8s forwards; }
+.fade-in-right { opacity: 0; transform: translateX(50px); animation: slideIn 0.8s forwards; }
+.slide-up { opacity: 0; transform: translateY(50px); transition: 0.8s; }
+.slide-up.visible { opacity: 1; transform: translateY(0); }
+.delay-1 { animation-delay: 0.2s; transition-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; transition-delay: 0.4s; }
+@keyframes slideIn { to { opacity: 1; transform: translateX(0); } }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero { flex-direction: column; justify-content: center; text-align: center; }
+    .name { font-size: 5rem; }
+    .nav { display: none; }
+    .bg-line { display: none; }
+    #cursor-ball { display: none; }
+    * { cursor: auto; }
+}

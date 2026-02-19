@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLAYER PORTFOLIO | SOTA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Roboto+Condensed:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a775888a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="cursor-ball"></div>
+
+    <div id="loading">
+        <div class="loading-content">
+            <span class="loading-text">KICK OFF</span>
+            <div class="loading-line"></div>
+        </div>
+    </div>
+
+    <div class="bg-line center-circle"></div>
+    <div class="bg-line side-line"></div>
+
+    <header>
+        <div class="logo">SOTA.<span class="num">10</span></div>
+        <nav>
+            <ul>
+                <li><a href="#profile" class="nav-link">PROFILE</a></li>
+                <li><a href="#stats" class="nav-link">STATS</a></li>
+                <li><a href="#highlights" class="nav-link">HIGHLIGHTS</a></li>
+                <li><a href="#contact" class="nav-link">SCOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <p class="position fade-in-left">WEB DEVELOPER / MF</p>
+                <h1 class="name fade-in-left delay-1">SOTA<br>TAKASUGI</h1>
+                <p class="slogan fade-in-left delay-2">GAME MAKER OF THE WEB.</p>
+            </div>
+            <div class="hero-visual fade-in-right delay-1">
+                <div class="hex-image">
+                    <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1000&auto=format&fit=crop" alt="Player Image">
+                </div>
+            </div>
+        </section>
+
+        <section id="profile" class="section">
+            <h2 class="section-title">PLAYER PROFILE</h2>
+            <div class="profile-card slide-up">
+                <div class="card-header">
+                    <span class="team-name">SAITAMA IT FC</span>
+                    <span class="season">2025-2026</span>
+                </div>
+                <div class="card-body">
+                    <div class="data-row">
+                        <span class="label">NAME</span>
+                        <span class="value">髙杉 颯汰</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">AGE</span>
+                        <span class="value">19</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">POSITION</span>
+                        <span class="value">Front-End Engineer</span>
+                    </div>
+                    <div class="data-row">
+                        <span class="label">STYLE</span>
+                        <span class="value">チーム連携を重視し、粘り強いコーディングでゴール（納品）を目指す。</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="section">
+            <h2 class="section-title">PLAYER STATS</h2>
+            <div class="stats-grid slide-up">
+                
+                <div class="stat-item">
+                    <div class="stat-info">
+                        <span class="stat-name">HTML / CSS</span>
+                        <span class="stat-val">90</span>
+                    </div>
+                    <div class="stat-bar"><div class="stat-fill" style="width: 90%;"></div></div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-info">
+                        <span class="stat-name">JavaScript</span>
+                        <span class="stat-val">75</span>
+                    </div>
+                    <div class="stat-bar"><div class="stat-fill" style="width: 75%;"></div></div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-info">
+                        <span class="stat-name">PHP / MySQL</span>
+                        <span class="stat-val">60</span>
+                    </div>
+                    <div class="stat-bar"><div class="stat-fill" style="width: 60%;"></div></div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-info">
+                        <span class="stat-name">Team Work</span>
+                        <span class="stat-val">95</span>
+                    </div>
+                    <div class="stat-bar"><div class="stat-fill" style="width: 95%;"></div></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="highlights" class="section">
+            <h2 class="section-title">MATCH HIGHLIGHTS</h2>
+            <div class="works-container slide-up">
+                
+                <a href="#" class="work-card">
+                    <div class="work-img">
+                        <img src="img/main_web.png" alt="Work 1" onerror="this.style.display='none'">
+                        <div class="work-overlay">PLAY VIDEO ▶</div>
+                    </div>
+                    <div class="work-desc">
+                        <h3>SCHOOL FESTIVAL SITE</h3>
+                        <p>Web Design / Coding</p>
+                    </div>
+                </a>
+
+                <a href="#" class="work-card">
+                    <div class="work-img">
+                        <img src="img/main_blog.png" alt="Work 2" onerror="this.style.display='none'">
+                        <div class="work-overlay">PLAY VIDEO ▶</div>
+                    </div>
+                    <div class="work-desc">
+                        <h3>TECH BLOG THEME</h3>
+                        <p>WordPress Theme</p>
+                    </div>
+                </a>
+
+                <a href="#" class="work-card">
+                    <div class="work-img">
+                        <img src="img/portfolio_web.png" alt="Work 3" onerror="this.style.display='none'">
+                        <div class="work-overlay">PLAY VIDEO ▶</div>
+                    </div>
+                    <div class="work-desc">
+                        <h3>THIS PORTFOLIO</h3>
+                        <p>Responsive Design</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">SCOUT OFFER</h2>
+            <div class="contact-box slide-up">
+                <p>オファー、練習参加（インターン）のご連絡はこちらから。</p>
+                <a href="mailto:sota.soccer@example.com" class="btn-scout">SEND OFFER</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">SOTA.10</div>
+        <small>&copy; 2026 SOTA TAKASUGI. ALL RIGHTS RESERVED.</small>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
