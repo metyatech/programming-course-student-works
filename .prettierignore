@@ -1,0 +1,7 @@
+node_modules/
+dist/
+build/
+coverage/
+AGENTS.md
+*.min.js
+*.min.css
