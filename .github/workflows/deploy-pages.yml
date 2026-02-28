@@ -6,9 +6,9 @@ on:
       - master
       - main
     paths:
-      - "works/**"
-      - "scripts/**"
-      - ".github/workflows/deploy-pages.yml"
+      - 'works/**'
+      - 'scripts/**'
+      - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +17,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages-student-works"
+  group: 'pages-student-works'
   cancel-in-progress: true
 
 jobs:
@@ -33,7 +33,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: '20'
 
       - name: Generate works-index.json
         run: node scripts/generate-works-index.mjs
@@ -49,4 +49,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

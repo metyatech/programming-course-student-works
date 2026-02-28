@@ -59,7 +59,10 @@ const findIndexHtmlPath = (studentPath, basePath) => {
           continue;
         }
         if (entry.isDirectory()) {
-          if (entry.name.startsWith('.') || ignoredDirectories.has(entry.name)) {
+          if (
+            entry.name.startsWith('.') ||
+            ignoredDirectories.has(entry.name)
+          ) {
             continue;
           }
           nextLevel.push(path.join(dir, entry.name));
@@ -123,10 +126,9 @@ fs.writeFileSync(path.join(distRoot, '.nojekyll'), '');
 const index = buildIndex(worksRoot);
 fs.writeFileSync(
   path.join(distRoot, 'works-index.json'),
-  `${JSON.stringify(index, null, 2)}\n`
+  `${JSON.stringify(index, null, 2)}\n`,
 );
 
 console.log(
-  `Generated works-index.json (years=${Object.keys(index.years).length})`
+  `Generated works-index.json (years=${Object.keys(index.years).length})`,
 );
-
